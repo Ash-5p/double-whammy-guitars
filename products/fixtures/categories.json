@@ -1,0 +1,38 @@
+[
+    {
+        "model": "products.category",
+        "pk": 1,
+        "fields": {
+            "name": "guitars",
+            "friendly_name": "Guitars",
+            "subcategory": [1, 2, 3]
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 2,
+        "fields": {
+            "name": "amps",
+            "friendly_name": "Amps",
+            "subcategory": []
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 3,
+        "fields": {
+            "name": "pedals",
+            "friendly_name": "Pedals",
+            "subcategory": [4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 4,
+        "fields": {
+            "name": "accessories",
+            "friendly_name": "Accessories",
+            "subcategory": [24,25,26]
+        }
+    }
+]

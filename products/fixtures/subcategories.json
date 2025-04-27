@@ -1,0 +1,210 @@
+[
+    {
+        "model": "products.subcategory",
+        "pk": 1,
+        "fields": {
+            "name": "electric_guitars",
+            "friendly_name": "Electric Guitars"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 2,
+        "fields": {
+            "name": "acoustic_guitars",
+            "friendly_name": "Acoustic Guitars"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 3,
+        "fields": {
+            "name": "bass_guitars",
+            "friendly_name": "Bass Guitars"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 4,
+        "fields": {
+            "name": "overdrive_pedals",
+            "friendly_name": "Overdrive Pedals"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 5,
+        "fields": {
+            "name": "fuzz_pedals",
+            "friendly_name": "Fuzz Pedals"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 6,
+        "fields": {
+            "name": "distortion_pedals",
+            "friendly_name": "Distortion Pedals"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 7,
+        "fields": {
+            "name": "boost_pedals",
+            "friendly_name": "Boost Pedals"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 8,
+        "fields": {
+            "name": "compressor_pedals",
+            "friendly_name": "Compressor Pedals"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 9,
+        "fields": {
+            "name": "volume_pedals",
+            "friendly_name": "Volume Pedals"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 10,
+        "fields": {
+            "name": "eq__pedals",
+            "friendly_name": "EQ Pedals"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 11,
+        "fields": {
+            "name": "noise_gate_pedals",
+            "friendly_name": "Noise Gate Pedals"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 12,
+        "fields": {
+            "name": "delay_pedals",
+            "friendly_name": "Delay Pedals"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 13,
+        "fields": {
+            "name": "reverb_pedals",
+            "friendly_name": "Reverb Pedals"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 14,
+        "fields": {
+            "name": "chorus_pedals",
+            "friendly_name": "Chorus Pedals"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 15,
+        "fields": {
+            "name": "tremolo_pedals",
+            "friendly_name": "Tremolo Pedals"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 16,
+        "fields": {
+            "name": "phaser_pedals",
+            "friendly_name": "Phaser Pedals"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 17,
+        "fields": {
+            "name": "flanger_pedals",
+            "friendly_name": "Flanger Pedals"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 18,
+        "fields": {
+            "name": "wah_pedals",
+            "friendly_name": "Wah Pedals"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 19,
+        "fields": {
+            "name": "pitch_shifter_pedals",
+            "friendly_name": "Pitch Shifter Pedals"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 20,
+        "fields": {
+            "name": "octave_pedals",
+            "friendly_name": "Octave Pedals"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 21,
+        "fields": {
+            "name": "synth_pedals",
+            "friendly_name": "Synth Pedals"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 22,
+        "fields": {
+            "name": "tuner_pedals",
+            "friendly_name": "Tuner Pedals"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 23,
+        "fields": {
+            "name": "looper_pedals",
+            "friendly_name": "Looper Pedals"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 24,
+        "fields": {
+            "name": "plectrums",
+            "friendly_name": "Plectrums"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 25,
+        "fields": {
+            "name": "capos",
+            "friendly_name": "Capos"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 26,
+        "fields": {
+            "name": "straps",
+            "friendly_name": "Straps"
+        }
+    }
+]

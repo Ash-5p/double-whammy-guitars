@@ -1,0 +1,34 @@
+[
+    {
+        "model": "products.brand",
+        "pk": 1,
+        "fields": {
+            "name": "les_paul",
+            "friendly_name": "Les Paul"
+        }
+    },
+    {
+        "model": "products.brand",
+        "pk": 2,
+        "fields": {
+            "name": "fender",
+            "friendly_name": "Fender"
+        }
+    },
+    {
+        "model": "products.brand",
+        "pk": 3,
+        "fields": {
+            "name": "ibanez",
+            "friendly_name": "Ibanez"
+        }
+    },
+    {
+        "model": "products.brand",
+        "pk": 4,
+        "fields": {
+            "name": "gretsch",
+            "friendly_name": "Gretsch"
+        }
+    }
+]
