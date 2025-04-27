@@ -5,6 +5,7 @@ from .models import Product, Category, Subcategory, Brand
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
     list_display = ('name', 'category', 'subcategory', 'brand', 'price')
+    ordering = ('category', 'subcategory', 'name')
 
     def formfield_for_foreignkey(self, db_field, request, **kwargs):
         if db_field.name == "subcategory":
@@ -27,5 +28,15 @@ class CategoryAdmin(admin.ModelAdmin):
     filter_horizontal = ('subcategory',)
 
 
-admin.site.register(Subcategory)
-admin.site.register(Brand)
+@admin.register(Subcategory)
+class SubcategoryAdmin(admin.ModelAdmin):
+
+    list_display = ('friendly_name', )
+    search_fields = ['name', 'friendly_name']
+
+
+@admin.register(Brand)
+class BrandAdmin(admin.ModelAdmin):
+
+    list_display = ('friendly_name', )
+    search_fields = ['name', 'friendly_name']
