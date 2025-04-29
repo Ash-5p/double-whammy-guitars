@@ -14,13 +14,22 @@
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="guitars-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Products
+                Guitars
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="guitars-link">
-                <a href="" class="dropdown-item">Electric Guitars</a>
-                <a href="" class="dropdown-item">Acoustic Guitars</a>
-                <a href="" class="dropdown-item">Bass Guitars</a>
-                <a href="" class="dropdown-item">All Guitars</a>
+                <a href="{% url 'products' %}?subcategory=electric_guitars" class="dropdown-item">Electric Guitars</a>
+                <a href="{% url 'products' %}?subcategory=acoustic_guitars" class="dropdown-item">Acoustic Guitars</a>
+                <a href="{% url 'products' %}?subcategory=bass_guitars" class="dropdown-item">Bass Guitars</a>
+                <a href="{% url 'products' %}?category=guitars" class="dropdown-item">All Guitars</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="guitars-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Amps
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="guitars-link">
+                <a href="{% url 'products' %}?category=amps" class="dropdown-item">All Amps</a>
             </div>
         </li>
 
@@ -29,43 +38,46 @@
                 Pedals
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="pedals-link">
-                <a href="" class="dropdown-item">Overdrive Pedals</a>
-                <a href="" class="dropdown-item">Fuzz Pedals</a>
-                <a href="" class="dropdown-item">Distortion Pedals</a>
-                <a href="" class="dropdown-item">Boost Pedals</a>
-                <a href="" class="dropdown-item">Compressor Pedals</a>
-                <a href="" class="dropdown-item">Volume Pedals</a>
-                <a href="" class="dropdown-item">EQ Pedals</a>
-                <a href="" class="dropdown-item">Noise Gate Pedals</a>
-                <a href="" class="dropdown-item">Delay Pedals</a>
-                <a href="" class="dropdown-item">Reverb Pedals</a>
-                <a href="" class="dropdown-item">Chorus Pedals</a>
-                <a href="" class="dropdown-item">Tremolo Pedals</a>
-                <a href="" class="dropdown-item">Phaser Pedals</a>
-                <a href="" class="dropdown-item">Flanger Pedals</a>
-                <a href="" class="dropdown-item">Wah Pedals</a>
-                <a href="" class="dropdown-item">Pitch Shifter Pedals</a>
-                <a href="" class="dropdown-item">Octave Pedals</a>
-                <a href="" class="dropdown-item">Synth Pedals</a>
-                <a href="" class="dropdown-item">Tuner Pedals</a>
-                <a href="" class="dropdown-item">Looper Pedals</a>
-                <a href="" class="dropdown-item">All Modulation Pedals</a>
-                <a href="" class="dropdown-item">All Overdrive & Dynamic Pedals</a>
-                <a href="" class="dropdown-item">All Pitch & Filter Pedals</a>
-                <a href="" class="dropdown-item">All Utility Pedals</a>
-                <a href="" class="dropdown-item">All Pedals</a>
+                <!-- {% for subcategory in subcategories %}
+                    <a href="" class="dropdown-item">{{ subcategory.friendly_name }}</a>
+                {% endfor %} -->
+                <a href="{% url 'products' %}?subcategory=overdrive_pedals" class="dropdown-item">Overdrive Pedals</a>
+                <a href="{% url 'products' %}?subcategory=fuzz_pedals" class="dropdown-item">Fuzz Pedals</a>
+                <a href="{% url 'products' %}?subcategory=distortion_pedals" class="dropdown-item">Distortion Pedals</a>
+                <a href="{% url 'products' %}?subcategory=boost_pedals" class="dropdown-item">Boost Pedals</a>
+                <a href="{% url 'products' %}?subcategory=compressor_pedals" class="dropdown-item">Compressor Pedals</a>
+                <a href="{% url 'products' %}?subcategory=volume_pedals" class="dropdown-item">Volume Pedals</a>
+                <a href="{% url 'products' %}?subcategory=eq_pedals" class="dropdown-item">EQ Pedals</a>
+                <a href="{% url 'products' %}?subcategory=noise_gate_pedals" class="dropdown-item">Noise Gate Pedals</a>
+                <a href="{% url 'products' %}?subcategory=delay_pedals" class="dropdown-item">Delay Pedals</a>
+                <a href="{% url 'products' %}?subcategory=reverb_pedals" class="dropdown-item">Reverb Pedals</a>
+                <a href="{% url 'products' %}?subcategory=chorus_pedals" class="dropdown-item">Chorus Pedals</a>
+                <a href="{% url 'products' %}?subcategory=tremolo_pedals" class="dropdown-item">Tremolo Pedals</a>
+                <a href="{% url 'products' %}?subcategory=phaser_pedals" class="dropdown-item">Phaser Pedals</a>
+                <a href="{% url 'products' %}?subcategory=flanger_pedals" class="dropdown-item">Flanger Pedals</a>
+                <a href="{% url 'products' %}?subcategory=wah_pedals" class="dropdown-item">Wah Pedals</a>
+                <a href="{% url 'products' %}?subcategory=pitch_shifter_pedals" class="dropdown-item">Pitch Shifter Pedals</a>
+                <a href="{% url 'products' %}?subcategory=octave_pedals" class="dropdown-item">Octave Pedals</a>
+                <a href="{% url 'products' %}?subcategory=synth_pedals" class="dropdown-item">Synth Pedals</a>
+                <a href="{% url 'products' %}?subcategory=tuner_pedals" class="dropdown-item">Tuner Pedals</a>
+                <a href="{% url 'products' %}?subcategory=looper_pedals" class="dropdown-item">Looper Pedals</a>
+                <a href="{% url 'products' %}?subcategory=overdrive_pedals,fuzz_pedals,distortion_pedals,boost_pedals,compressor_pedals,volume_pedals,eq_pedals,noise_gate_pedals" class="dropdown-item">All Overdrive & Dynamic Pedals</a>
+                <a href="{% url 'products' %}?subcategory=delay_pedals,delay_pedals,reverb_pedals,chorus_pedals,tremolo_pedals,phaser_pedals,flanger_pedals" class="dropdown-item">All Modulation Pedals</a>
+                <a href="{% url 'products' %}?subcategory=wah_pedals,pitch_shifter_pedals,octave_pedals,synth_pedals" class="dropdown-item">All Pitch & Filter Pedals</a>
+                <a href="{% url 'products' %}?subcategory=tuner_pedals,looper_pedals" class="dropdown-item">All Utility Pedals</a>
+                <a href="{% url 'products' %}?category=pedals" class="dropdown-item">All Pedals</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Special Offers
+                Accessories
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?subcategory=straps" class="dropdown-item">Guitar Straps</a>
+                <a href="{% url 'products' %}?subcategory=plectrums" class="dropdown-item">Plectrums</a>
+                <a href="{% url 'products' %}?subcategory=capos" class="dropdown-item">Capos</a>
+                <a href="{% url 'products' %}?category=accessories" class="dropdown-item">All Accessories</a>
             </div>
         </li>
     </ul>
