@@ -30,5 +30,29 @@
             "name": "gretsch",
             "friendly_name": "Gretsch"
         }
+    },
+    {
+        "model": "products.brand",
+        "pk": 5,
+        "fields": {
+            "name": "boss",
+            "friendly_name": "Boss"
+        }
+    },
+    {
+        "model": "products.brand",
+        "pk": 6,
+        "fields": {
+            "name": "vox",
+            "friendly_name": "Vox"
+        }
+    },
+    {
+        "model": "products.brand",
+        "pk": 7,
+        "fields": {
+            "name": "orange",
+            "friendly_name": "Orange"
+        }
     }
 ]

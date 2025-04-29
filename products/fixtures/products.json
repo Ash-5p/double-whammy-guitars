@@ -6,10 +6,49 @@
         "category": 1,
         "subcategory": 1,
         "brand": 1,
-        "name": "Gibson USA Les Paul Standard '50s Electric Guitar in Transparent Honey Amber",
-        "description": "The iconic Gibson Les Paul Standard, a timeless classic that speaks for itself having been one the leading and most popular guitars in the music industry. The Gibson Les Paul Standard ‘50s Figured Top is a harkens back to the classic design and look that graced the stage 70 years ago. Featuring a solid Mahogany body, with AA figured Maple top in a Transparent Honey Amber Nitrocellulose finish, and PAF-style Pickups. This Les Paul utilises all the authentic era specifications that made you fall in love with this guitar in the first place. The Mahogany “50s Style” neck has a chunkier feel, compared to the slim taper of later Les Paul designs, giving you comfortable thumb support moving around the neck.",
+        "name": "Gibson USA Les Paul Standard '50s Faded Electric Guitar in Vintage Honey Burst",
+        "description": "Sporting a satin nitrocellulose lacquer finish, the Les Paul Standard 50s Faded has the look and feel of a well-loved vintage instrument. Built on the tried and tested foundation of a solid Mahogany body and AA figured Maple top, it is dynamic and resonant with sustain for days. The Mahogany neck has a rounded 50s-style profile, adding to the vintage feel, and is topped with a silky smooth Rosewood fingerboard. At the heart of the Les Paul is a set of double-black, open-coil Burstbucker pickups, with a Burstbucker 1 in the neck and Burstbucker 2 in the bridge. Other premium appointments include an ABR-1 Tune-O-Matic bridge, vintage deluxe tuners, Orange Drop capacitors and a hardshell case.",
         "price": "1999.99",
-        "image": "https://res.cloudinary.com/dyz3wjxmw/image/upload/v1745695838/gibson-usa-les-paul-standard-50s-transparent-honey-amber_g6bu26.jpg"
+        "image": "https://res.cloudinary.com/dyz3wjxmw/image/upload/v1745773953/gibson-usa-les-paul-standard-50s-faded-electric-guitar-vintage-honey-burst_ahxong.jpg"
       }
-    }
+    },
+    {
+        "model": "products.product",
+        "pk": 2,
+        "fields": {
+          "category": 2,
+          "subcategory": null,
+          "brand": 5,
+          "name": "Boss Katana 50 Gen 3 50w Guitar Amp Combo",
+          "description": "The BOSS KATANA Gen 3 range is here with another amp character, evolved tube logic, improved tone storage and an updated app to once again take its spot as the go-to amplifier for the modern guitarist. This amplifier is a compact 50-watt combo with a custom 12-inch speaker with evolved Tube Logic sound, 12 amp characters, onboard BOSS effects, an incredible app and more. With the additon of the BOSS BT-DUAL Blueooth Adapter, you can literally remote edit your settings and playback from your phone!",
+          "price": "249.00",
+          "image": "https://res.cloudinary.com/dyz3wjxmw/image/upload/v1745760473/boss-katana-amp_fzk0up.jpg"
+        }
+      },
+      {
+        "model": "products.product",
+        "pk": 3,
+        "fields": {
+          "category": 1,
+          "subcategory": 2,
+          "brand": 1,
+          "name": "Fender CD-60SCE All-Mahogany Dreadnought Electro Acoustic Guitar in Natural",
+          "description": "The Fender CD-60SCE combines comfortable playability, great tone, and built-in Fishman electronics into one affordable acoustic guitar, ideal for those looking to start their acoustic guitar playing journey",
+          "price": "259.00",
+          "image": "https://res.cloudinary.com/dyz3wjxmw/image/upload/v1745760931/fender-CD-60SCE_codnqc.jpg"
+        }
+      },
+      {
+        "model": "products.product",
+        "pk": 4,
+        "fields": {
+          "category": 3,
+          "subcategory": 4,
+          "brand": 5,
+          "name": "Boss SD-1 Super Overdrive Pedal",
+          "description": "A simple yet effective overdrive powering smooth rock tones synonymous with classic overdriven amps. As you'd expect then, the Boss SD-1 pedal is particularly effective for blues and rock! Overdrive that doesn't oversaturate or overcompress leaving the dynamics and nuances of your playing intact.",
+          "price": "65.00",
+          "image": "https://res.cloudinary.com/dyz3wjxmw/image/upload/v1745764899/boss-SD-1-super-overdrive-pedal_sgeenh.jpg"
+        }
+      }
   ]
