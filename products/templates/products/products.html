@@ -51,7 +51,27 @@
                                     <div class="row">
                                         <div class="col">
                                             <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
-                                                <small class="text-muted">{{ product.description|truncatechars:200 }}</small>
+                                            {% if product.category %}
+                                            <p class="small mt-1 mb-0">
+                                                {% if product.category %}
+                                                    <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                                                        <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                                    </a>
+                                                {% endif %}
+                                                {% if product.subcategory %}
+                                                    > <a class="text-muted" href="{% url 'products' %}?subcategory={{ product.subcategory.name }}">
+                                                        {{ product.subcategory.friendly_name }}
+                                                    </a>
+                                                {% endif %}
+                                            </p>
+                                                {% endif %}
+                                                {% if request.user.is_superuser %}
+                                                    <small class="ml-3">
+                                                        <a href="">Edit</a> |
+                                                        <a class="text-danger" href="">Delete</a>
+                                                    </small>
+                                                {% endif %}
+                                            <small class="text-muted">{{ product.description|truncatechars:200 }}</small>
                                         </div>
                                     </div>
                                 </div>
