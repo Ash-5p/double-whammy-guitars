@@ -20,7 +20,7 @@
                 <a href="{% url 'products' %}?subcategory=electric_guitars" class="dropdown-item">Electric Guitars</a>
                 <a href="{% url 'products' %}?subcategory=acoustic_guitars" class="dropdown-item">Acoustic Guitars</a>
                 <a href="{% url 'products' %}?subcategory=bass_guitars" class="dropdown-item">Bass Guitars</a>
-                <a href="{% url 'products' %}?category=guitars" class="dropdown-item">All Guitars</a>
+                <a href="{% url 'products' %}?subcategory=electric_guitars,acoustic_guitars,bass_guitars" class="dropdown-item">All Guitars</a>
             </div>
         </li>
 
@@ -65,7 +65,7 @@
                 <a href="{% url 'products' %}?subcategory=delay_pedals,delay_pedals,reverb_pedals,chorus_pedals,tremolo_pedals,phaser_pedals,flanger_pedals" class="dropdown-item">All Modulation Pedals</a>
                 <a href="{% url 'products' %}?subcategory=wah_pedals,pitch_shifter_pedals,octave_pedals,synth_pedals" class="dropdown-item">All Pitch & Filter Pedals</a>
                 <a href="{% url 'products' %}?subcategory=tuner_pedals,looper_pedals" class="dropdown-item">All Utility Pedals</a>
-                <a href="{% url 'products' %}?category=pedals" class="dropdown-item">All Pedals</a>
+                <a href="{% url 'products' %}?subcategory=overdrive_pedals,fuzz_pedals,distortion_pedals,boost_pedals,compressor_pedals,volume_pedals,eq_pedals,noise_gate_pedals,delay_pedals,delay_pedals,reverb_pedals,chorus_pedals,tremolo_pedals,phaser_pedals,flanger_pedals,wah_pedals,pitch_shifter_pedals,octave_pedals,synth_pedals,tuner_pedals,looper_pedals" class="dropdown-item">All Pedals</a>
             </div>
         </li>
 
@@ -77,7 +77,7 @@
                 <a href="{% url 'products' %}?subcategory=straps" class="dropdown-item">Guitar Straps</a>
                 <a href="{% url 'products' %}?subcategory=plectrums" class="dropdown-item">Plectrums</a>
                 <a href="{% url 'products' %}?subcategory=capos" class="dropdown-item">Capos</a>
-                <a href="{% url 'products' %}?category=accessories" class="dropdown-item">All Accessories</a>
+                <a href="{% url 'products' %}?subcategory=straps,plectrums,capos" class="dropdown-item">All Accessories</a>
             </div>
         </li>
     </ul>
