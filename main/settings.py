@@ -31,7 +31,8 @@ DEBUG = os.environ.get("DEBUG", False)
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    '.herokuapp.com',]
+    '.herokuapp.com',
+    'localhost',]
 
 
 # Application definition
