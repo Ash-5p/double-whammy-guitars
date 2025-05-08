@@ -41,7 +41,7 @@
                         <div class="col-2 mb-1">
                             <a href="{% url 'product_detail' item.product.id %}">
                                 {% if "placeholder" in item.product.image.url %}
-                                    <img class="rounded img-fluid" src="{{ MEDIA_URL }}placeholder.png" alt="{{ item.product.name }}">                                      
+                                    <img class="rounded img-fluid" src="{% static 'images\placeholder.png' %}" alt="{{ item.product.name }}">                                      
                                 {% else %}
                                     <img class="rounded img-fluid" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                                 {% endif %}

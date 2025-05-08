@@ -60,7 +60,7 @@
                                     {% if "placeholder" in product.image.url %}
                                     <a href="{% url 'product_detail' product.id %}">
                                         <div class="product-image-container">
-                                            <img class="card-img-top img-fluid product-image" src="{{ MEDIA_URL }}placeholder.png" alt="{{ product.name }}">
+                                            <img class="card-img-top img-fluid product-image" src="{% static 'images\placeholder.png' %}" alt="{{ product.name }}">
                                         </div>
                                     </a>
                                     {% else %}

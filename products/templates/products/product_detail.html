@@ -17,7 +17,7 @@
             <div class="image-container my-5">
                 {% if "placeholder" in product.image.url %}
                 <a href="">
-                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}placeholder.png" alt="{{ product.name }}">
+                    <img class="card-img-top img-fluid" src="{% static 'images\placeholder.png' %}" alt="{{ product.name }}">
                 </a>
                 {% else %}
                 <a href="{{ product.image.url }}" target="_blank">
