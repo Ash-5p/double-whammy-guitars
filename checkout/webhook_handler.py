@@ -1,3 +1,5 @@
+import stripe
+
 from django.http import HttpResponse
 
 from .models import Order, OrderLineItem
@@ -20,7 +22,7 @@ class StripeWH_Handler:
         return HttpResponse(
             content=f'Unhandled webhook received: {event["type"]}',
             status=200)
-    
+
     def handle_payment_intent_succeeded(self, event):
         """
         Handle the payment_intent.succeeded webhook from Stripe
@@ -30,7 +32,7 @@ class StripeWH_Handler:
         bag = intent.metadata.bag
         save_info = intent.metadata.save_info
 
-                # Get the Charge object
+        # Get the Charge object
         stripe_charge = stripe.Charge.retrieve(
             intent.latest_charge
         )
