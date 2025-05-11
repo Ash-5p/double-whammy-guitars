@@ -37,6 +37,37 @@ def view_and_add_faqs(request):
 
 
 @login_required
+def edit_faq(request, faq_id):
+    """ Edit an FAQ on the FAQs page """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
+    faq = get_object_or_404(FAQ, pk=faq_id)
+    if request.method == 'POST':
+        form = FAQForm(request.POST, request.FILES, instance=faq)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated FAQ!')
+            return redirect(reverse('faqs'))
+        else:
+            messages.error(
+                request,
+                'Failed to update FAQ. Please ensure the form is valid.')
+    else:
+        form = FAQForm(instance=faq)
+        messages.info(request, f'You are editing {faq.question}')
+
+    template = 'faqs/edit_faq.html'
+    context = {
+        'form': form,
+        'faq': faq,
+    }
+
+    return render(request, template, context)
+
+
+@login_required
 def delete_faq(request, faq_id):
     """ Delete an FAQ from the FAQs page """
     if not request.user.is_superuser:
