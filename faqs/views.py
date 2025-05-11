@@ -6,18 +6,6 @@ from .models import FAQ
 from .forms import FAQForm
 
 
-# def faqs(request):
-
-#     faqs = FAQ.objects.all()
-
-#     template = 'faqs/faqs.html'
-#     context = {
-#         'faqs': faqs,
-#     }
-
-#     return render(request, template, context)
-
-
 def view_and_add_faqs(request):
     """ Add an FAQ to the FAQs page """
     if not request.user.is_superuser and request.method == 'POST':
@@ -46,3 +34,16 @@ def view_and_add_faqs(request):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def delete_faq(request, faq_id):
+    """ Delete an FAQ from the FAQs page """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
+    faq = get_object_or_404(FAQ, pk=faq_id)
+    faq.delete()
+    messages.success(request, 'FAQ deleted!')
+    return redirect(reverse('faqs'))
