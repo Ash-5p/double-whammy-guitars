@@ -1,0 +1,12 @@
+Hello {{ contact.name }}!
+
+This is a confirmation from Double Whammy Guitars to say we've recieved your message,
+and aim to respond to you within 24 Hours.
+
+In the meantime be sure to check out our FAQs page to see if there's an answer to your enquiry!
+
+Thank you for your message!
+
+Sincerely,
+
+Double Whammy Guitars
