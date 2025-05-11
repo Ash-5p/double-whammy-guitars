@@ -13,7 +13,7 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col">
                 <hr>
                 <h2 class="logo-font mb-4">FAQs</h2>
                 <hr>
@@ -21,9 +21,38 @@
         </div>
 
         <div class="row">
-            <div class="col-12 col-md-6">
-                
-            </div>            
+            <div class="col">
+                {% for faq in faqs %}
+                    <div class="row"><div class="col-12"><h3>{{ faq.question }}</h3></div></div>
+                    <br>
+                    <div class="row"><div class="col-12"><strong>Answer: </strong>{{ faq.answer }}</div></div>
+                    <div class="row"><div class="col-12"><small><strong>Updated On: </strong>{{ faq.updated_on }}</small></div></div>
+                    {% if request.user.is_superuser %}
+                        <small class="ml-3">
+                            <a href="">Edit</a> |
+                            <a class="text-danger" href="">Delete</a>
+                        </small>
+                    {% endif %}
+                <hr>
+                {% endfor %}
+            </div>
+        </div>
+            {% if request.user.is_superuser %}
+                <div class="row">
+                    <div class="col">
+                        <hr>
+                        <h2 class="logo-font mb-4">Add FAQ</h2>
+                        <hr>
+                        <form method="POST" action="{% url 'faqs' %}" class="form mb-2" enctype="multipart/form-data">
+                            {% csrf_token %}
+                                {{ form | crispy }}
+                            <div class="text-right">
+                                <button class="btn btn-black rounded-0" type="submit">Add FAQ</button>
+                            </div>
+                        </form>
+                    </div>      
+                </div>  
+            {% endif %}       
         </div>
     </div>
 {% endblock %}
