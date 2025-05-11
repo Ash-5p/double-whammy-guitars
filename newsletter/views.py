@@ -1,17 +1,22 @@
 from django.shortcuts import render, redirect, reverse
 
+from django.core.mail import send_mail
+from django.template.loader import render_to_string
 from django.contrib import messages
+from django.conf import settings
 
 from .forms import NewsletterForm
 
 
 def newsletter(request):
     """ A view to return the newsletter page & form """
+
     if request.method == 'POST':
         form = NewsletterForm(request.POST, request.FILES)
         if form.is_valid():
             newsletter = form.save()
             messages.success(request, 'Successfully signed up to newsletter!')
+            send_confirmation_email(newsletter.email)  # Pass the email here
             return redirect(reverse('home'))
         else:
             messages.error(
@@ -26,3 +31,19 @@ def newsletter(request):
     }
 
     return render(request, template, context)
+
+
+def send_confirmation_email(cust_email):
+    """ Send the user a confirmation email """
+    subject = render_to_string(
+        'newsletter/confirmation_emails/confirmation_email_subject.txt'
+    )
+    body = render_to_string(
+        'newsletter/confirmation_emails/confirmation_email_body.txt'
+    )
+    send_mail(
+        subject,
+        body,
+        settings.DEFAULT_FROM_EMAIL,
+        [cust_email]
+    )
