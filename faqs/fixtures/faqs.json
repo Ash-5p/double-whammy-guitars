@@ -1,0 +1,48 @@
+[
+    {
+      "model": "faqs.faq",
+      "pk": 1,
+      "fields": {
+        "question": "What types of guitars do you sell?",
+        "answer": "We offer a wide range of electric, acoustic, and bass guitars from top brands and boutique makers.",
+        "updated_on": "2025-05-11T12:00:00Z"
+      }
+    },
+    {
+      "model": "faqs.faq",
+      "pk": 2,
+      "fields": {
+        "question": "Do you offer international shipping?",
+        "answer": "Yes, we ship worldwide. Shipping costs and delivery times vary depending on your location.",
+        "updated_on": "2025-05-11T12:00:00Z"
+      }
+    },
+    {
+      "model": "faqs.faq",
+      "pk": 3,
+      "fields": {
+        "question": "Can I return a guitar if I don't like it?",
+        "answer": "Absolutely! We offer a 14-day return policy for unused items in original packaging.",
+        "updated_on": "2025-05-11T12:00:00Z"
+      }
+    },
+    {
+      "model": "faqs.faq",
+      "pk": 4,
+      "fields": {
+        "question": "Do you offer guitar setup and repair services?",
+        "answer": "Yes, we have in-house technicians who can handle setups, repairs, and custom modifications.",
+        "updated_on": "2025-05-11T12:00:00Z"
+      }
+    },
+    {
+      "model": "faqs.faq",
+      "pk": 5,
+      "fields": {
+        "question": "What payment methods do you accept?",
+        "answer": "We accept major credit cards, PayPal, Klarna, and bank transfers.",
+        "updated_on": "2025-05-11T12:00:00Z"
+      }
+    }
+  ]
+  
