@@ -1,10 +1,12 @@
+{% load static %}
+
 <div class="collapse navbar-collapse" id="main-nav">
-    <ul class="navbar-nav w-auto mx-auto">
+    <ul class="navbar-nav col-8">
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+            <div class="dropdown-menu border-0 bg-dark" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
                 <a href="{% url 'products' %}?sort=subcategory&direction=asc" class="dropdown-item ">By Subcategory</a>
@@ -16,7 +18,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="guitars-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Guitars
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="guitars-link">
+            <div class="dropdown-menu border-0 bg-dark" aria-labelledby="guitars-link">
                 <a href="{% url 'products' %}?subcategory=electric_guitars" class="dropdown-item">Electric Guitars</a>
                 <a href="{% url 'products' %}?subcategory=acoustic_guitars" class="dropdown-item">Acoustic Guitars</a>
                 <a href="{% url 'products' %}?subcategory=bass_guitars" class="dropdown-item">Bass Guitars</a>
@@ -28,7 +30,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="guitars-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Amps
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="guitars-link">
+            <div class="dropdown-menu border-0 bg-dark" aria-labelledby="guitars-link">
                 <a href="{% url 'products' %}?category=amps" class="dropdown-item">All Amps</a>
             </div>
         </li>
@@ -37,10 +39,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="pedals-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Pedals
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="pedals-link">
-                <!-- {% for subcategory in subcategories %}
-                    <a href="" class="dropdown-item">{{ subcategory.friendly_name }}</a>
-                {% endfor %} -->
+            <div class="dropdown-menu border-0 scrollable-dropdown bg-dark" aria-labelledby="pedals-link">
                 <a href="{% url 'products' %}?subcategory=overdrive_pedals" class="dropdown-item">Overdrive Pedals</a>
                 <a href="{% url 'products' %}?subcategory=fuzz_pedals" class="dropdown-item">Fuzz Pedals</a>
                 <a href="{% url 'products' %}?subcategory=distortion_pedals" class="dropdown-item">Distortion Pedals</a>
@@ -69,11 +68,11 @@
             </div>
         </li>
 
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown bg-dark">
             <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Accessories
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+            <div class="dropdown-menu border-0 bg-dark" aria-labelledby="specials-link">
                 <a href="{% url 'products' %}?subcategory=straps" class="dropdown-item">Guitar Straps</a>
                 <a href="{% url 'products' %}?subcategory=plectrums" class="dropdown-item">Plectrums</a>
                 <a href="{% url 'products' %}?subcategory=capos" class="dropdown-item">Capos</a>
@@ -81,7 +80,7 @@
             </div>
         </li>
     </ul>
-    <ul class="list-unstyled d-lg-flex my-1">
+    <ul class="list-unstyled d-lg-flex my-1 col-4">
         <li class="nav-item">
             <a class="logo-font font-weight-bold nav-link text-black other-nav-links" href="{% url 'faqs' %}" id="specials-link">
                 FAQs

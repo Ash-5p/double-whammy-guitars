@@ -18,6 +18,11 @@ body {
     width: 1.5rem;
 }
 
+.logo {
+    height: 100px;
+    border-radius: 50%;
+}
+
 .logo-font {
     text-transform: uppercase;
 }
@@ -105,8 +110,22 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+.search-bar-lg {
+    display: none;
+}
+
+.search-bar {
+    width: 500px;
+    margin: 0 10px;
+}
+
+.scrollable-dropdown {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
 .other-nav-links {
-    background-color: red;
+    
 }
 
 /* ------------------------------- bootstrap toasts */
@@ -281,6 +300,18 @@ input[name='q']::placeholder {
 
     .header-container {
         padding-top: 164px;
+    }
+
+    #product-nav {
+        height: 50px;
+    }
+
+    .search-bar-sm {
+        display: none;
+    }
+
+    .search-bar-lg {
+        display: inherit;
     }
 }
 
