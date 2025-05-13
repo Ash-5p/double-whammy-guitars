@@ -1,3 +1,5 @@
+/* General -------------------------------------------------------------------------------------------*/
+
 html {
     height: 100%;
 }
@@ -31,10 +33,26 @@ body {
     width: fit-content;
 }
 
+.delivery-banner {
+    background-color: orangered;
+    box-shadow: #000 2px 3px 2px 2px;
+}
+
 .shop-now-button {
-    background: black;
-    color: white;
+    background-color: orangered;
+    box-shadow: #000 2px 3px 5px;
     min-width: 260px;
+    opacity: 0.9;
+}
+
+.logo-container {
+    padding-top: 90px;
+}
+
+.home-logo {
+    width: max(250px, 50%);
+    border-radius: 50%;
+    opacity: 0.7;
 }
 
 .btn-black {
@@ -299,7 +317,7 @@ input[name='q']::placeholder {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 130px;
     }
 
     #product-nav {
@@ -360,4 +378,4 @@ input[name='q']::placeholder {
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
     }
-}
+} 

@@ -12,13 +12,12 @@
 {% block content %}
     <div class="container h-100">
         <div class="row h-100">
-            <div class="col-7 col-md-12 my-auto text-center">
-                <h1 class="display-4 logo-font text-black">
-                    Guitars for every type of player
-                </h1>
-                <div class="my-5">
+            <div class="col-12 my-auto text-center logo-container">
+                <img src="{% static 'images/logo.jpg' %}" alt="" class="home-logo">
+            </div>
+                <div class="my-5 ml-3">
                     <h4>
-                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-4 text-uppercase py-3">Shop Now</a>
                     </h4>
                 </div>
             </div>
