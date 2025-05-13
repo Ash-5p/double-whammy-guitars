@@ -160,10 +160,6 @@ input[name='q']::placeholder {
     color: orangered;
 }
 
-.empty-bag {
-    color: white;
-}
-
 .scrollable-dropdown {
     max-height: 300px;
     overflow-y: auto;
