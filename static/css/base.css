@@ -128,6 +128,10 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+.navbar-toggler {
+    background-color: white;
+}
+
 .search-bar-lg {
     display: none;
 }
@@ -135,6 +139,29 @@ input[name='q']::placeholder {
 .search-bar {
     width: 500px;
     margin: 0 10px;
+    padding-bottom: 5px;
+}
+
+.search-bar input.form-control {
+    border-right: none;
+    border-top: black solid 1px;
+    border-left: black solid 1px;
+    border-bottom: black solid 1px;
+}
+
+.search-bar button {
+    background-color: orangered;
+    border-top: black solid 1px;
+    border-right: black solid 1px;
+    border-bottom: black solid 1px;
+}
+
+.bag {
+    color: orangered;
+}
+
+.empty-bag {
+    color: white;
 }
 
 .scrollable-dropdown {
@@ -142,8 +169,13 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
-.other-nav-links {
-    
+.services-links,
+.nav-link {
+    padding-left: 0;
+}
+
+.dropdown-item {
+    color: white;
 }
 
 /* ------------------------------- bootstrap toasts */
@@ -305,6 +337,11 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+@media (max-width: 992px) {
+    .header-container {
+        padding-top: 116px;
+    }
+}
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
@@ -335,20 +372,13 @@ input[name='q']::placeholder {
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
-    .header-container {
-        padding-top: 116px;
-    }
-
+    
     body {
         height: calc(100vh - 116px);
     }
 
     .display-4.logo-font.text-black {
         font-size: 2rem;
-    }
-
-    .nav-link {
-        padding: 0.15rem;
     }
 
     .nav-link i.fa-lg {
@@ -377,5 +407,13 @@ input[name='q']::placeholder {
 
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
+    }
+} 
+
+
+/* Allows for pedal category dropdown on screens down to 480px high */
+@media (max-height: 526px) {
+    .scrollable-dropdown {
+        max-height: 200px;
     }
 } 
