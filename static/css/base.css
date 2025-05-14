@@ -182,6 +182,11 @@ input[name='q']::placeholder {
     background-color: orangered;
 }
 
+.qty-form-container {
+    max-width: 200px;
+    margin: auto;
+}
+
 .increment-qty {
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
@@ -190,6 +195,14 @@ input[name='q']::placeholder {
 .decrement-qty {
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
+}
+
+/* Controls --------------------------------------------------*/
+
+.bag-img {
+    width: 100%;
+    height: auto;
+    max-width: 100px;
 }
 
 /* ------------------------------- bootstrap toasts */
