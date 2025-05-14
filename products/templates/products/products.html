@@ -65,7 +65,7 @@
                                     </a>
                                     {% else %}
                                     <a href="{% url 'product_detail' product.id %}">
-                                        <div class="product-image-container">
+                                        <div class="product-image-container {% if product.category.id == 1 %}guitar{% endif %}">
                                             <img class="card-img-top img-fluid product-image" src="{{ product.image.url }}" alt="{{ product.name }}">
                                         </div>
                                     </a>
@@ -98,7 +98,6 @@
                                                         <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                                                     </small>
                                                 {% endif %}
-                                            <small class="text-muted">{{ product.description|truncatechars:200 }}</small>
                                         </div>
                                     </div>
                                 </div>

@@ -1,8 +1,9 @@
 .product-image-container {
-    height: 20vw;
+    height: max(200px, 20vh);
     max-width: fit-content;
     place-self: center;
     align-content: center;
+    overflow: hidden;
 }
 
 .product-image {
@@ -12,3 +13,12 @@
     padding: 10px;
 }
 
+.guitar {
+    
+}
+
+.guitar>img {
+    object-fit: cover;
+    height: 20vh;
+    object-position: bottom;
+  }
