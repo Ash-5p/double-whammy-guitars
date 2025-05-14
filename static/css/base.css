@@ -1,4 +1,4 @@
-/* General -------------------------------------------------------------------------------------------*/
+/* General --------------------------------------------------*/
 
 html {
     height: 100%;
@@ -55,8 +55,8 @@ body {
     opacity: 0.7;
 }
 
-.btn-black {
-    background: black;
+.btn-orange {
+    background: orangered;
     color: white;
 }
 
@@ -104,6 +104,8 @@ body {
 	background: white;
 	z-index: -1;
 }
+
+/* Navigation --------------------------------------------------*/
 
 a.category-badge > span.badge:hover {
     background: #212529 !important;
@@ -172,6 +174,22 @@ input[name='q']::placeholder {
 
 .dropdown-item {
     color: white;
+}
+
+/* Controls --------------------------------------------------*/
+
+.increment-qty, .decrement-qty {
+    background-color: orangered;
+}
+
+.increment-qty {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.decrement-qty {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
 }
 
 /* ------------------------------- bootstrap toasts */

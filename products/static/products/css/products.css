@@ -13,12 +13,24 @@
     padding: 10px;
 }
 
-.guitar {
-    
-}
-
 .guitar>img {
     object-fit: cover;
-    height: 20vh;
+    height: max(200px, 20vh);
     object-position: bottom;
+  }
+
+  .detail-image-container{
+    height: 50vh;
+    max-width: fit-content;
+    place-self: center;
+    align-content: center;
+  }
+
+  .guitar-detail{
+    height: 60vh;
+    overflow: hidden;
+  }
+
+  .guitar-detail>img {
+    height: 60vh;
   }
