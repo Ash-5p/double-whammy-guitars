@@ -1,54 +1,184 @@
 [
-    {
+  {
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+      "category": 1,
+      "subcategory": 1,
+      "brand": 1,
+      "name": "Gibson USA Les Paul Standard '50s Faded Electric Guitar in Vintage Honey Burst",
+      "description": "Sporting a satin nitrocellulose lacquer finish, the Les Paul Standard 50s Faded has the look and feel of a well-loved vintage instrument. Built on the tried and tested foundation of a solid Mahogany body and AA figured Maple top, it is dynamic and resonant with sustain for days. The Mahogany neck has a rounded 50s-style profile, adding to the vintage feel, and is topped with a silky smooth Rosewood fingerboard. At the heart of the Les Paul is a set of double-black, open-coil Burstbucker pickups, with a Burstbucker 1 in the neck and Burstbucker 2 in the bridge. Other premium appointments include an ABR-1 Tune-O-Matic bridge, vintage deluxe tuners, Orange Drop capacitors and a hardshell case.",
+      "price": "1999.99",
+      "image": "https://res.cloudinary.com/dyz3wjxmw/image/upload/v1745773953/gibson-usa-les-paul-standard-50s-faded-electric-guitar-vintage-honey-burst_ahxong.jpg"
+    }
+  },
+  {
       "model": "products.product",
-      "pk": 1,
+      "pk": 2,
       "fields": {
-        "category": 1,
-        "subcategory": 1,
-        "brand": 1,
-        "name": "Gibson USA Les Paul Standard '50s Faded Electric Guitar in Vintage Honey Burst",
-        "description": "Sporting a satin nitrocellulose lacquer finish, the Les Paul Standard 50s Faded has the look and feel of a well-loved vintage instrument. Built on the tried and tested foundation of a solid Mahogany body and AA figured Maple top, it is dynamic and resonant with sustain for days. The Mahogany neck has a rounded 50s-style profile, adding to the vintage feel, and is topped with a silky smooth Rosewood fingerboard. At the heart of the Les Paul is a set of double-black, open-coil Burstbucker pickups, with a Burstbucker 1 in the neck and Burstbucker 2 in the bridge. Other premium appointments include an ABR-1 Tune-O-Matic bridge, vintage deluxe tuners, Orange Drop capacitors and a hardshell case.",
-        "price": "1999.99",
-        "image": "https://res.cloudinary.com/dyz3wjxmw/image/upload/v1745773953/gibson-usa-les-paul-standard-50s-faded-electric-guitar-vintage-honey-burst_ahxong.jpg"
+        "category": 2,
+        "subcategory": null,
+        "brand": 5,
+        "name": "Boss Katana 50 Gen 3 50w Guitar Amp Combo",
+        "description": "The BOSS KATANA Gen 3 range is here with another amp character, evolved tube logic, improved tone storage and an updated app to once again take its spot as the go-to amplifier for the modern guitarist. This amplifier is a compact 50-watt combo with a custom 12-inch speaker with evolved Tube Logic sound, 12 amp characters, onboard BOSS effects, an incredible app and more. With the additon of the BOSS BT-DUAL Blueooth Adapter, you can literally remote edit your settings and playback from your phone!",
+        "price": "249.00",
+        "image": "https://res.cloudinary.com/dyz3wjxmw/image/upload/v1745760473/boss-katana-amp_fzk0up.jpg"
       }
     },
     {
-        "model": "products.product",
-        "pk": 2,
-        "fields": {
-          "category": 2,
-          "subcategory": null,
-          "brand": 5,
-          "name": "Boss Katana 50 Gen 3 50w Guitar Amp Combo",
-          "description": "The BOSS KATANA Gen 3 range is here with another amp character, evolved tube logic, improved tone storage and an updated app to once again take its spot as the go-to amplifier for the modern guitarist. This amplifier is a compact 50-watt combo with a custom 12-inch speaker with evolved Tube Logic sound, 12 amp characters, onboard BOSS effects, an incredible app and more. With the additon of the BOSS BT-DUAL Blueooth Adapter, you can literally remote edit your settings and playback from your phone!",
-          "price": "249.00",
-          "image": "https://res.cloudinary.com/dyz3wjxmw/image/upload/v1745760473/boss-katana-amp_fzk0up.jpg"
-        }
-      },
-      {
-        "model": "products.product",
-        "pk": 3,
-        "fields": {
-          "category": 1,
-          "subcategory": 2,
-          "brand": 1,
-          "name": "Fender CD-60SCE All-Mahogany Dreadnought Electro Acoustic Guitar in Natural",
-          "description": "The Fender CD-60SCE combines comfortable playability, great tone, and built-in Fishman electronics into one affordable acoustic guitar, ideal for those looking to start their acoustic guitar playing journey",
-          "price": "259.00",
-          "image": "https://res.cloudinary.com/dyz3wjxmw/image/upload/v1745760931/fender-CD-60SCE_codnqc.jpg"
-        }
-      },
-      {
-        "model": "products.product",
-        "pk": 4,
-        "fields": {
-          "category": 3,
-          "subcategory": 4,
-          "brand": 5,
-          "name": "Boss SD-1 Super Overdrive Pedal",
-          "description": "A simple yet effective overdrive powering smooth rock tones synonymous with classic overdriven amps. As you'd expect then, the Boss SD-1 pedal is particularly effective for blues and rock! Overdrive that doesn't oversaturate or overcompress leaving the dynamics and nuances of your playing intact.",
-          "price": "65.00",
-          "image": "https://res.cloudinary.com/dyz3wjxmw/image/upload/v1745764899/boss-SD-1-super-overdrive-pedal_sgeenh.jpg"
-        }
+      "model": "products.product",
+      "pk": 3,
+      "fields": {
+        "category": 1,
+        "subcategory": 2,
+        "brand": 1,
+        "name": "Fender CD-60SCE All-Mahogany Dreadnought Electro Acoustic Guitar in Natural",
+        "description": "The Fender CD-60SCE combines comfortable playability, great tone, and built-in Fishman electronics into one affordable acoustic guitar, ideal for those looking to start their acoustic guitar playing journey",
+        "price": "259.00",
+        "image": "https://res.cloudinary.com/dyz3wjxmw/image/upload/v1745760931/fender-CD-60SCE_codnqc.jpg"
       }
+    },
+    {
+      "model": "products.product",
+      "pk": 4,
+      "fields": {
+        "category": 3,
+        "subcategory": 4,
+        "brand": 5,
+        "name": "Boss SD-1 Super Overdrive Pedal",
+        "description": "A simple yet effective overdrive powering smooth rock tones synonymous with classic overdriven amps. As you'd expect then, the Boss SD-1 pedal is particularly effective for blues and rock! Overdrive that doesn't oversaturate or overcompress leaving the dynamics and nuances of your playing intact.",
+        "price": "65.00",
+        "image": "https://res.cloudinary.com/dyz3wjxmw/image/upload/v1745764899/boss-SD-1-super-overdrive-pedal_sgeenh.jpg"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 5,
+      "fields": {
+        "category": 3,
+        "subcategory": 4,
+        "brand": 3,
+        "name": "Ibanez TS9 Tube Screamer Overdrive Pedal",
+        "description": "The Ibanez Tube Screamer is possibly one of the most popular pedals on the planet. You will be hard pressed to find a guitarist without at least some kind of tube screamer in their pedal collection. It is mainly used in one of two ways as a smooth creamy overdrive which is amazing for blues and rock mid gain tones or as a boost pedal to take push a clean or overdriven amp. Every guitarist has somewhere they could use a TS9 so what are you waiting for!",
+        "price": "109.99",
+        "image": "https://res.cloudinary.com/dyz3wjxmw/image/upload/v1747593555/291786-ts91__13465.1715113772_w2e8p0.jpg"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 6,
+      "fields": {
+        "category": 3,
+        "subcategory": 5,
+        "brand": 5,
+        "name": "Vox Valvenergy Mystic Edge Distortion Pedal",
+        "description": "Fuzz pedals were the earliest type of distortion pedals, and quickly became the sound of the ‘60s. Everyone from Jimi Hendrix to Keith Richards used fuzz to shape their iconic guitar tones and with the all-new Boss FZ-1W, you can do the same!",
+        "price": "169.99",
+        "image": "https://res.cloudinary.com/dyz3wjxmw/image/upload/v1747594019/474052-FZ-1W_20Front__93868.1715166675_liz9zk.jpg"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 7,
+      "fields": {
+        "category": 3,
+        "subcategory": 6,
+        "brand": 6,
+        "name": "Vox Valvenergy Mystic Edge Distortion Pedal",
+        "description": "The Valvenergy Mystic Edge pedal offers the glistening chime and mid-range sweetness of Vox's legendary AC30 amplifier. Powered by Korg's innovative Nutube technology, this stompbox accurately captures the warmth, feel and dynamic touch-sensitivity of its real-life counterpart - all from a compact unit that can easily be mounted onto a pedalboard!",
+        "price": "119.99",
+        "image": "https://res.cloudinary.com/dyz3wjxmw/image/upload/v1747594214/412670-Vox-Valvenergy-Mystic-Edge-Distortion-Pedal__07636.1715109574_f5sqnu.jpg"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 8,
+      "fields": {
+        "category": 3,
+        "subcategory": 7,
+        "brand": 3,
+        "name": "Ibanez BTMINI Booster Pedal",
+        "description": "Ibanez is proud to announce a new addition to the MINI pedal lineup. The BTMINI booster features three controls; BASS, TREBLE and LEVEL. Unlike a single knob booster, the BASS and TREBLE EQ enables significant tonal flexibility. For example, while set to the Wide Range setting (Turing Bass and Treble all the way up) the guitar tone will become broader, with more volume and presence across the entire frequency range, and the Mid Boost setting is ideal for cutting though a band mix.",
+        "price": "84.99",
+        "image": "https://res.cloudinary.com/dyz3wjxmw/image/upload/v1747594373/424348-BTMINI_C3_01_A__73698.1715111140_wkg8y4.jpg"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 9,
+      "fields": {
+        "category": 3,
+        "subcategory": 8,
+        "brand": 7,
+        "name": "Orange Kongpressor Pedal",
+        "description": "Inspired by some of the world’s most iconic vintage optical studio units, the Kongpressor from Orange harks back to vactrol VTL5C3 optocoupler. With a fast attack and slow release you can get really tight sounding rhythm, ideal for fast, poppy funk rhythm.",
+        "price": "114.99",
+        "image": "https://res.cloudinary.com/dyz3wjxmw/image/upload/v1747594614/130982-Kongpressor-Pedal-1e-1030x1030__97237.1715112391_gdoy5b.jpg"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 10,
+      "fields": {
+        "category": 3,
+        "subcategory": 9,
+        "brand": 2,
+        "name": "Fender Tread-Light Volume/Expression Pedal",
+        "description": "Express yourself! Fender’s Tread-Light™ Volume/Expression Pedal helps you control your stage volume for enhanced dynamic performance and also acts as an expression pedal for use with other effects pedals and keyboards. Its special under-treadle LED provides easy visibility onstage under any light, and its durable chassis and treadle are crafted from lightweight anodized aluminium, with a rubberized pad ideal for the rigors of live performance. The switchable LED indicates when the pedal is active and ready for use.",
+        "price": "94.99",
+        "image": "https://res.cloudinary.com/dyz3wjxmw/image/upload/v1747594814/373001-1578927712325__93482.1715111648_whf1w7.jpg"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 11,
+      "fields": {
+        "category": 3,
+        "subcategory": 10,
+        "brand": 5,
+        "name": "Boss GE-7 Graphic Equalizer Pedal",
+        "description": "Shape your sound and eliminate feedback with seven bands of equalization thanks to the Boss GE-7 Graphic Equalizer. Controllable frequencies range from 100Hz to 6.4kHz with a powerful 15dB boost/cut per band.",
+        "price": "96.99",
+        "image": "https://res.cloudinary.com/dyz3wjxmw/image/upload/v1747595354/389929-1587483602032__80404.1715111544_nl4jz7.jpg"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 12,
+      "fields": {
+        "category": 3,
+        "subcategory": 11,
+        "brand": 3,
+        "name": "Ibanez PTGATE Noise Gate Pedal",
+        "description": "The Ibanez Gate pedal is a pedal that encompasses the GATE section of the Ibanez Pentatone Preamp. The extraordinary tone shaping control, dynamic arrays of distortion and exceptional amounts of EQ are all laid out at your feet. The Pentatone Gate from Ibanez affords the perfect blend of features all wrapped up in an intuitive, all-analogue platform.",
+        "price": "79.99",
+        "image": "https://res.cloudinary.com/dyz3wjxmw/image/upload/v1747595491/PTGATE-PTGATE_BH_01_A__95353.1715110590_wdwnli.jpg"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 13,
+      "fields": {
+      "category": 3,
+      "subcategory": 12,
+      "brand": 2,
+      "name": "Fender Hammertone Delay Pedal",
+      "description": "The Hammertone Delay is a versatile delay pedal that delivers everything from clucky country slap backs, surfy swells, rhythmic dotted-eighths and huge ambient washes. Whether you want to create lush walls of sound or simply sweeten up your line lines, the Hammertone Delay does it all! With up to 950ms of delay time on tap, the Hammertone Delay boasts three different delay types. The modulation switch adds some vintage character to your delay trails and an analogue dry-through keeps your tone pure when the effect is engaged. The compact chassis and top-mounted jacks allow for seamless integration into your rig.",
+      "price": "74.99",
+      "image": "https://res.cloudinary.com/dyz3wjxmw/image/upload/v1747595814/490284-0234572000__87661.1715109448_rjxvmw.jpg"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 14,
+      "fields": {
+      "category": 1,
+      "subcategory": 3,
+      "brand": 3,
+      "name": "Ibanez TMB30-MGR 4 String Bass Guitar In Mint Green",
+      "description": "The Ibanez Talman guitars were originally launched back in 1994, but it was only after they were discontinued in 1998 that people really got attached to the guitars. Now, the Talman is coming back, including this TMB30 short scale bass that captures the sound of some of the world's most popular vintage alternative basses.",
+      "price": "229.00",
+      "image": "https://res.cloudinary.com/dyz3wjxmw/image/upload/v1747595996/382224-TMB30-MGR-front__66078.1715855948_l3xeof.jpg"
+      }
+    }
   ]
