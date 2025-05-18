@@ -55,9 +55,12 @@ body {
     opacity: 0.7;
 }
 
+.allauth-form-inner-content .btn-orange,
 .btn-orange {
     background: orangered;
     color: white;
+    border-radius: .25rem;
+    border: 1px solid transparent;
 }
 
 .btn-outline-black {
@@ -170,6 +173,11 @@ input[name='q']::placeholder {
 .services-links,
 .nav-link {
     padding-left: 0;
+}
+
+.hover:hover {
+    background-color: orangered;
+    border-radius: 5px;
 }
 
 .dropdown-item {
@@ -395,6 +403,11 @@ input[name='q']::placeholder {
     .search-bar-lg {
         display: inherit;
     }
+
+    .services-links,
+    .nav-link {
+    padding: 0.5rem 0.8rem;
+}
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */

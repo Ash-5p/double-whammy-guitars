@@ -13,15 +13,14 @@
     <div class="overlay"></div>
         <div class="container">                
             <div class="row">
-                <div class="col-12 col-md-6">
-                    <hr>
-                    <h2 class="logo-font mb-4">Subscribe to our Newsletter</h2>
+                <div class="col-12 col-md-6 mt-5">
+                    <h2 class="logo-font mb-4 mt-lg-5">Subscribe to our Newsletter</h2>
                     <hr>
                     <form method="POST" action="{% url 'newsletter' %}" class="form mb-2" enctype="multipart/form-data">
                         {% csrf_token %}
                             {{ form | crispy }}
                         <div class="text-right">
-                            <a class="btn btn-outline-black " href="{% url 'home' %}">Cancel</a>
+                            <a class="btn btn-dark" href="{% url 'home' %}">Cancel</a>
                             <button class="btn btn-orange " type="submit">Subscribe</button>
                         </div>
                     </form>
