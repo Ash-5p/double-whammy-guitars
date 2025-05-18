@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 mt-5">
+                <h2 class="logo-font mb-4 mt-lg-5 text-center">404 - Total String Outage</h2>
+                <h5 class="text-muted">404 - Total String Outage</h5>
+                <hr>
+                <p>Looks like you hit a bum note! This page is as lost as a guitar pick under the couch.</p>
+
+                <p>At <strong>Double Whammy Guitars</strong>, we hit high notes — but this one? Definitely flat.</p>
+
+                <ul>
+                <li>Head back to the <a href="{% url 'home' %}">main stage</a>.</li>
+                <li>Check out our collection of <a href="{% url 'products' %}">Axes & AXE-essories</a>.</li>
+                <li>Try tuning your URL</li>
+                </ul>
+
+                <p><em>"To whammy is human, to double whammy is divine."</em></p>
+
+                <p>Stay loud, stay proud.</p>
+            </div>
+        </div>
+
+        
+    </div>
+{% endblock %}
