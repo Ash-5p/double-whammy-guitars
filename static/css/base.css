@@ -55,6 +55,30 @@ body {
     opacity: 0.7;
 }
 
+.text-black {
+    color: #000 !important;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+.bg-black {
+    background: #000 !important;
+}
+
+.overlay {
+    height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
+/* Navigation --------------------------------------------------*/
+
 .allauth-form-inner-content .btn-orange,
 .btn-orange {
     background: orangered;
@@ -85,30 +109,6 @@ body {
     background: #222;
     color: white;
 }
-
-.text-black {
-    color: #000 !important;
-}
-
-.border-black {
-    border: 1px solid black !important;
-}
-
-.bg-black {
-    background: #000 !important;
-}
-
-.overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: white;
-	z-index: -1;
-}
-
-/* Navigation --------------------------------------------------*/
 
 a.category-badge > span.badge:hover {
     background: #212529 !important;
@@ -173,11 +173,6 @@ input[name='q']::placeholder {
 .services-links,
 .nav-link {
     padding-left: 0;
-}
-
-.hover:hover {
-    background-color: orangered;
-    border-radius: 5px;
 }
 
 .dropdown-item {
@@ -407,7 +402,13 @@ input[name='q']::placeholder {
     .services-links,
     .nav-link {
     padding: 0.5rem 0.8rem;
-}
+    }
+
+    .hover:hover {
+        background-color: orangered;
+        border-radius: 5px;
+    }
+
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */

@@ -34,3 +34,9 @@
   .guitar-detail>img {
     height: 60vh;
   }
+
+  select#sort-selector {
+    background: orangered;
+    border-radius: 5px;
+    color: white;
+}
