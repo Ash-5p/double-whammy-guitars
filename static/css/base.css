@@ -9,7 +9,12 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+    font-family: "Radio Canada Big", sans-serif;
 }
 
 .icon {
