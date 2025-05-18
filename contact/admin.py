@@ -1,3 +1,10 @@
 from django.contrib import admin
+from .models import Contact
 
-# Register your models here.
+
+@admin.register(Contact)
+class MenuItemAdmin(admin.ModelAdmin):
+
+    list_display = ('name', 'email', 'sent_on')
+    search_fields = ['name', 'message', 'message']
+    ordering = ('-sent_on',)

@@ -6,13 +6,30 @@ from products.models import Product
 
 
 def view_bag(request):
-    """ A view that renders the bag contents page """
+    """
+    Display page page.
+
+    **Template:**
+
+    :template:`bag/bag.html`
+    """
 
     return render(request, 'bag/bag.html')
 
 
 def add_to_bag(request, item_id):
-    """ Add a quantity of the specified product to the shopping bag """
+    """
+    Add the quantity of the speicfied product to the shopping bag.
+
+    **Context**
+
+    ``product``
+        Instance of :model:`products.Product`.
+    ``quantity``
+        Quantity of each product in the bag.
+    ``bag``
+        Set of products & quantities in the bag
+    """
 
     product = get_object_or_404(Product, pk=item_id)
 
@@ -39,7 +56,17 @@ def add_to_bag(request, item_id):
 
 def adjust_bag(request, item_id):
     """
-    Adjust the quantity of the specified product to the specified amount
+    Adjust the quantity of the specified product in the bag to the specified
+    amount.
+
+    **Context**
+
+    ``product``
+        Instance of :model:`products.Product`.
+    ``quantity``
+        Quantity of each product in the bag.
+    ``bag``
+        Set of products & quantities in the bag
     """
 
     product = get_object_or_404(Product, pk=item_id)
@@ -65,7 +92,16 @@ def adjust_bag(request, item_id):
 
 
 def remove_from_bag(request, item_id):
-    """ Remove the item from the shopping bag """
+    """
+    Removes an item from the shopping bag
+
+    **Context**
+
+    ``product``
+        Instance of :model:`products.Product`.
+    ``bag``
+        Set of products & quantities in the bag
+    """
 
     product = get_object_or_404(Product, pk=item_id)
 

@@ -32,6 +32,24 @@ def cache_checkout_data(request):
 
 
 def checkout(request):
+    """
+    Renders the checkout form with Stripe payment form.
+    Display list of current bag items & line totals + grand total.
+
+    **Context**
+
+    ``order_form``
+        An instance of :forms:`checkout.OrderForm`.
+    ``stripe_public_key``
+        An instance of public key required to connect to stripe account
+    ``client_secret``
+        An instance of secret key required to connect to stripe account
+
+    **Template:**
+
+    :template:`checkout/checkout.html`
+    """
+
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
@@ -131,7 +149,17 @@ def checkout(request):
 
 def checkout_success(request, order_number):
     """
-    Handle successful checkouts
+    Renders the checkout success page, and displays details of
+    the order placed.
+
+    **Context**
+
+    ``order``
+        An instance of :model:`checkout.Order`.
+
+    **Template:**
+
+    :template:`checkout/checkout_success.html`
     """
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)

@@ -5,6 +5,33 @@ from products.models import Product
 
 
 def bag_contents(request):
+    """
+    Context processor for storing the bag data within the session.
+
+    **Context**
+
+    ``bag_items``
+        A list of all instances of :model:`products.Product` in the bag.
+    ``total``
+        The sum total of all instances of :model:`products.Product.price`
+        in the bag.
+    ``product_count``
+        The sum total of all instances of :model:`products.Product`
+        in the bag.
+    ``delivery``
+        The calculated delivery cost.
+    ``free_delivery_delta``
+        The difference between FREE_DELIVERY_THRESHOLD & total where
+        FREE_DELIVERY_THRESHOLD > total
+    ``free_delivery_threshold``
+    The threshold at which delivery becomes free
+    ``grand_total``
+    total + delivery
+
+    **Template:**
+
+    :template:`menu/menu.html`
+    """
 
     bag_items = []
     total = 0

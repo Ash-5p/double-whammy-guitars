@@ -11,6 +11,9 @@ from profiles.models import UserProfile
 
 
 class Order(models.Model):
+    """
+    Stores a single order.
+    """
     order_number = models.CharField(max_length=32, null=False, editable=False)
     user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
                                      null=True, blank=True, related_name='orders')
@@ -29,7 +32,6 @@ class Order(models.Model):
     grand_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
     original_bag = models.TextField(null=False, blank=False, default='')
     stripe_pid = models.CharField(max_length=254, null=False, blank=False, default='')
-
 
     def _generate_order_number(self):
         """
@@ -64,6 +66,9 @@ class Order(models.Model):
 
 
 class OrderLineItem(models.Model):
+    """
+    Stores each individual line item for an order.
+    """
     order = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems')
     product = models.ForeignKey(Product, null=False, blank=False, on_delete=models.CASCADE)
     quantity = models.IntegerField(null=False, blank=False, default=0)
