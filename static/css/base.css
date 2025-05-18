@@ -205,6 +205,16 @@ input[name='q']::placeholder {
     border-bottom-left-radius: 50%;
 }
 
+.btn-admin {
+    border: #000 solid 1px;
+    padding: 1px 2px;
+    border-radius: 2px; 
+}
+
+a:not([href]){
+    color: white;
+}
+
 /* Controls --------------------------------------------------*/
 
 .bag-img {
