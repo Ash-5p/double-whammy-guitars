@@ -9,7 +9,29 @@ from .forms import ProductForm
 
 
 def all_products(request):
-    """ A view to show all products, including sorting and search queries """
+    """
+    A view to show all products, including sorting and search queries
+    Display categorised list of all instances of :model:`products.Product`.
+
+    **Context**
+
+    ``products``
+        All instances of :model:`product.Product`.
+    ``search_term``
+        The current query within the search bar.
+    ``current_category``
+        The currently selected category from the existing list within the
+        template.
+    ``current_subcategory``
+        The currently selected subcategory from the existing list within the
+        template.
+    ``current_sorting``
+        The combination of sorting order & parameter.
+
+    **Template:**
+
+    :template:`products/products.html`
+    """
 
     products = Product.objects.all()
     query = None
@@ -71,7 +93,18 @@ def all_products(request):
 
 
 def product_detail(request, product_id):
-    """ A view to show individual product details """
+    """
+    Display a single instance of :model:`products.Product`.
+
+    **Context**
+
+    ``product``
+        A single instance of :model:`products.Product`.
+
+    **Template:**
+
+    :template:`products/product_detail.html`
+    """
 
     product = get_object_or_404(Product, pk=product_id)
 
@@ -84,7 +117,20 @@ def product_detail(request, product_id):
 
 @login_required
 def add_product(request):
-    """ Add a product to the store """
+    """
+    Returns an isntance of :form:`products.ProductForm`.
+    Allows a superuser to add an instance of :model:`products.Product`.
+
+    **Context**
+
+    ``form``
+        A single instance of :form:`products.ProductForm`.
+
+    **Template:**
+
+    :template:`products/add_product.html`
+    """
+
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
@@ -112,7 +158,22 @@ def add_product(request):
 
 @login_required
 def edit_product(request, product_id):
-    """ Edit a product in the store """
+    """
+    Returns an isntance of :form:`products.ProductForm`.
+    Allows a superuser to edit an instance of :model:`products.Product`.
+
+    **Context**
+
+    ``form``
+        A single instance of :form:`products.ProductForm`.
+    ``product``
+        A single instance of :model:`products.Product`.
+
+    **Template:**
+
+    :template:`products/edit_product.html`
+    """
+
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
@@ -143,7 +204,9 @@ def edit_product(request, product_id):
 
 @login_required
 def delete_product(request, product_id):
-    """ Delete a product from the store """
+    """
+    Allows a superuser to delete an instance of :model:`products.Product`.
+    """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))

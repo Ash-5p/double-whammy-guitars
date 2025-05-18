@@ -9,7 +9,18 @@ from .forms import NewsletterForm
 
 
 def newsletter(request):
-    """ A view to return the newsletter page & form """
+    """
+    Returns an instance of :form:`newsletter.NewsletterForm`.
+
+    **Context**
+
+    ``form``
+        A single instances of :form:`newsletter.NewsletterForm`.
+
+    **Template:**
+
+    :template:`newsletter/newsletter.html`
+    """
 
     if request.method == 'POST':
         form = NewsletterForm(request.POST, request.FILES)

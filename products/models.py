@@ -3,7 +3,9 @@ from cloudinary.models import CloudinaryField
 
 
 class Subcategory(models.Model):
-
+    """
+    Stores a single subcategory
+    """
     class Meta:
         verbose_name_plural = 'Subcategories'
 
@@ -18,7 +20,9 @@ class Subcategory(models.Model):
 
 
 class Category(models.Model):
-
+    """
+    Stores a single category
+    """
     class Meta:
         verbose_name_plural = 'Categories'
 
@@ -46,6 +50,9 @@ class Brand(models.Model):
 
 
 class Product(models.Model):
+    """
+    Stores a single product
+    """
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     subcategory = models.ForeignKey('Subcategory', null=True, blank=True, on_delete=models.SET_NULL)
     brand = models.ForeignKey('Brand', null=True, blank=True, on_delete=models.SET_NULL)

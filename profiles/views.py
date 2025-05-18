@@ -8,7 +8,30 @@ from checkout.models import Order
 
 
 def profile(request):
-    """ Display the user's profile. """
+    """
+    Display the currently logged in user's profile
+    Returns an isntance of :model:`profiles.UserProfile`.
+
+    Renders an isntance of :form:`profiles.UserProfileForm`.
+    Allows user to edit their isntance of :model:`profiles.UserProfile`.
+
+    Allows user to view all instances of :model:`checkout.Order` created
+    by the currently logged in user.
+
+
+    **Context**
+
+    ``form``
+        A single instance of :form:`profiles.UserProfileForm`.
+    ``orders``
+        All instances of :model:`checkout.Order` created by the user.
+    ``on_profile_page``
+        Returns on_profile_page = True for use in DTL tags.
+
+    **Template:**
+
+    :template:`profiles/profile.html`
+    """
     profile = get_object_or_404(UserProfile, user=request.user)
 
     if request.method == 'POST':
@@ -31,6 +54,21 @@ def profile(request):
 
 
 def order_history(request, order_number):
+    """
+    Displays a single instance of :model:`checkout.Order` created
+    by the currently logged in user.
+
+    **Context**
+
+    ``orders``
+        A single instance of :model:`checkout.Order` created by the user.
+    ``from_profile``
+        Returns from_profile = True for use in DTL tags.
+
+    **Template:**
+
+    :template:`checkout/checkout_success.html`
+    """
     order = get_object_or_404(Order, order_number=order_number)
 
     messages.info(request, (

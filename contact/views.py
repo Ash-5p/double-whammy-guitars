@@ -9,7 +9,18 @@ from .forms import ContactForm
 
 
 def contact(request):
-    """ A view to return the newsletter page & form """
+    """
+    Renders an instance of :form:`contact.ContactForm`.
+
+    **Context**
+
+    ``form``
+        An instance of :form:`contact.ContactForm`.
+
+    **Template:**
+
+    :template:`contact/contact.html`
+    """
 
     if request.method == 'POST':
         form = ContactForm(request.POST, request.FILES)

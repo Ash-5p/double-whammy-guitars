@@ -7,7 +7,21 @@ from .forms import FAQForm
 
 
 def view_and_add_faqs(request):
-    """ Add an FAQ to the FAQs page """
+    """
+    Display a list of all instances of :model:`faqs.FAQ`.
+    Display an instance of :form:`faqs.FAQForm` if the user is a superuser.
+
+    **Context**
+
+    ``faqs``
+        All instances of :model:`faqs.FAQ`.
+    ``form``
+        An instance of :form:`faqs.FAQForm`.
+
+    **Template:**
+
+    :template:`faqs/faqs.html`
+    """
     if not request.user.is_superuser and request.method == 'POST':
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
@@ -38,7 +52,21 @@ def view_and_add_faqs(request):
 
 @login_required
 def edit_faq(request, faq_id):
-    """ Edit an FAQ on the FAQs page """
+    """
+    Modify a single isntance of :model:`faqs.FAQ` if the user is a superuser.
+    Display an instance of :form:`faqs.FAQForm` if the user is a superuser.
+
+    **Context**
+
+    ``faq``
+        A single isntance of :model:`faqs.FAQ`.
+    ``form``
+        An instance of :form:`faqs.FAQForm`.
+
+    **Template:**
+
+    :template:`faqs/edit_faq.html`
+    """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
@@ -69,7 +97,9 @@ def edit_faq(request, faq_id):
 
 @login_required
 def delete_faq(request, faq_id):
-    """ Delete an FAQ from the FAQs page """
+    """
+    Delete a single isntance of :model:`faqs.FAQ` if the user is a superuser.
+    """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
