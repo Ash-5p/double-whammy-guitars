@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/accounts/login/</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/bag/</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?sort=subcategory&amp;direction=asc</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=electric_guitars</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=acoustic_guitars</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=bass_guitars</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=electric_guitars,acoustic_guitars,bass_guitars</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?category=amps</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=overdrive_pedals</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=fuzz_pedals</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=distortion_pedals</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=boost_pedals</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=compressor_pedals</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=volume_pedals</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=eq_pedals</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=noise_gate_pedals</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=delay_pedals</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=reverb_pedals</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=chorus_pedals</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=tremolo_pedals</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=phaser_pedals</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=flanger_pedals</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=wah_pedals</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=pitch_shifter_pedals</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=octave_pedals</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=synth_pedals</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=tuner_pedals</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=looper_pedals</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=overdrive_pedals,fuzz_pedals,distortion_pedals,boost_pedals,compressor_pedals,volume_pedals,eq_pedals,noise_gate_pedals</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=delay_pedals,delay_pedals,reverb_pedals,chorus_pedals,tremolo_pedals,phaser_pedals,flanger_pedals</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=wah_pedals,pitch_shifter_pedals,octave_pedals,synth_pedals</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=tuner_pedals,looper_pedals</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=overdrive_pedals,fuzz_pedals,distortion_pedals,boost_pedals,compressor_pedals,volume_pedals,eq_pedals,noise_gate_pedals,delay_pedals,delay_pedals,reverb_pedals,chorus_pedals,tremolo_pedals,phaser_pedals,flanger_pedals,wah_pedals,pitch_shifter_pedals,octave_pedals,synth_pedals,tuner_pedals,looper_pedals</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=straps</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=plectrums</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=capos</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=straps,plectrums,capos</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/faqs/</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/contact/</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/newsletter/</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/4/</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?category=pedals</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/13/</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/12/</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/8/</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/10/</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/11/</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?subcategory=eq__pedals</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/5/</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/9/</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/7/</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/6/</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/14/</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/?category=guitars</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/2/</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/3/</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://double-whammy-guitars-47bed68ef1db.herokuapp.com/products/1/</loc>
+  <lastmod>2025-05-19T15:26:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

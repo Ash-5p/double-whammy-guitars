@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://double-whammy-guitars-47bed68ef1db.herokuapp.com/sitemap.xml
