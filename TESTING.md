@@ -54,7 +54,12 @@ Unfortunately, pages that require a user to be "logged-in" and authenticated (CR
 
 I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
 
-
+| Directory | File | URL | Screenshot | Notes |
+| --- | --- | --- | --- | --- |
+| main | [settings.py](https://github.com/Ash-5p/double-whammy-guitars/blob/main/main/settings.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Ash-5p/double-whammy-guitars/main/main/settings.py) | ![screenshot](documentation/validation/py-main-settings.png) | Notes (if applicable) |
+| main | [urls.py](https://github.com/Ash-5p/double-whammy-guitars/blob/main/main/urls.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Ash-5p/double-whammy-guitars/main/main/urls.py) | ![screenshot](documentation/validation/py-main-urls.png) | Notes (if applicable) |
+|  | [manage.py](https://github.com/Ash-5p/double-whammy-guitars/blob/main/manage.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Ash-5p/double-whammy-guitars/main/manage.py) | ![screenshot](documentation/validation/py--manage.png) | Notes (if applicable) |
+|  | [test.py](https://github.com/Ash-5p/double-whammy-guitars/blob/main/test.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Ash-5p/double-whammy-guitars/main/test.py) | ![screenshot](documentation/validation/py--test.png) | Notes (if applicable) |
 
 ### CSS
 
