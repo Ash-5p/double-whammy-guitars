@@ -101,6 +101,11 @@ h4, h5, h6 {
 
 /* Footer --------------------------------------------------*/
 
+/* Prevents footer overlapping content at bottom of page */
+.spacer {
+    height: 40px;
+}
+
 footer {
     font-size: 1.5em;
 }
