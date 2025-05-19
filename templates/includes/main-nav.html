@@ -1,105 +1,107 @@
 {% load static %}
 
-<div class="collapse navbar-collapse d-lg-flex justify-content-between" id="main-nav">
-    <ul class="navbar-nav">
-        <li class="nav-item dropdown text-white d-lg-none">
-            <a class="logo-font font-weight-bold nav-link mr-5 text-white hover" href="{% url 'home' %}" id="home-link" aria-haspopup="true" aria-expanded="false">
-                Home
-            </a>
-        </li>
-        <li class="nav-item dropdown text-white">
-            <a class="logo-font font-weight-bold nav-link mr-5 text-white hover" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Products
-            </a>
-            <div class="dropdown-menu border-0 bg-dark" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
-                <a href="{% url 'products' %}?sort=subcategory&direction=asc" class="dropdown-item ">By Subcategory</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
-            </div>
-        </li>
+<li class="w-100">
+    <div class="collapse navbar-collapse d-lg-flex justify-content-between" id="main-nav">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown text-white d-lg-none">
+                <a class="logo-font font-weight-bold nav-link mr-5 text-white hover" href="{% url 'home' %}" id="home-link" aria-haspopup="true" aria-expanded="false">
+                    Home
+                </a>
+            </li>
+            <li class="nav-item dropdown text-white">
+                <a class="logo-font font-weight-bold nav-link mr-5 text-white hover" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Products
+                </a>
+                <div class="dropdown-menu border-0 bg-dark" aria-labelledby="all-products-link">
+                    <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                    <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
+                    <a href="{% url 'products' %}?sort=subcategory&direction=asc" class="dropdown-item ">By Subcategory</a>
+                    <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+                </div>
+            </li>
 
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-white mr-5 hover" href="#" id="guitars-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Guitars
-            </a>
-            <div class="dropdown-menu border-0 bg-dark" aria-labelledby="guitars-link">
-                <a href="{% url 'products' %}?subcategory=electric_guitars" class="dropdown-item">Electric Guitars</a>
-                <a href="{% url 'products' %}?subcategory=acoustic_guitars" class="dropdown-item">Acoustic Guitars</a>
-                <a href="{% url 'products' %}?subcategory=bass_guitars" class="dropdown-item">Bass Guitars</a>
-                <a href="{% url 'products' %}?subcategory=electric_guitars,acoustic_guitars,bass_guitars" class="dropdown-item">All Guitars</a>
-            </div>
-        </li>
+            <li class="nav-item dropdown">
+                <a class="logo-font font-weight-bold nav-link text-white mr-5 hover" href="#" id="guitars-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Guitars
+                </a>
+                <div class="dropdown-menu border-0 bg-dark" aria-labelledby="guitars-link">
+                    <a href="{% url 'products' %}?subcategory=electric_guitars" class="dropdown-item">Electric Guitars</a>
+                    <a href="{% url 'products' %}?subcategory=acoustic_guitars" class="dropdown-item">Acoustic Guitars</a>
+                    <a href="{% url 'products' %}?subcategory=bass_guitars" class="dropdown-item">Bass Guitars</a>
+                    <a href="{% url 'products' %}?subcategory=electric_guitars,acoustic_guitars,bass_guitars" class="dropdown-item">All Guitars</a>
+                </div>
+            </li>
 
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-white mr-5 hover" href="#" id="amps-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Amps
-            </a>
-            <div class="dropdown-menu border-0 bg-dark" aria-labelledby="amps-link">
-                <a href="{% url 'products' %}?category=amps" class="dropdown-item">All Amps</a>
-            </div>
-        </li>
+            <li class="nav-item dropdown">
+                <a class="logo-font font-weight-bold nav-link text-white mr-5 hover" href="#" id="amps-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Amps
+                </a>
+                <div class="dropdown-menu border-0 bg-dark" aria-labelledby="amps-link">
+                    <a href="{% url 'products' %}?category=amps" class="dropdown-item">All Amps</a>
+                </div>
+            </li>
 
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-white mr-5 hover" href="#" id="pedals-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Pedals
-            </a>
-            <div class="dropdown-menu border-0 scrollable-dropdown bg-dark" aria-labelledby="pedals-link">
-                <a href="{% url 'products' %}?subcategory=overdrive_pedals" class="dropdown-item">Overdrive Pedals</a>
-                <a href="{% url 'products' %}?subcategory=fuzz_pedals" class="dropdown-item">Fuzz Pedals</a>
-                <a href="{% url 'products' %}?subcategory=distortion_pedals" class="dropdown-item">Distortion Pedals</a>
-                <a href="{% url 'products' %}?subcategory=boost_pedals" class="dropdown-item">Boost Pedals</a>
-                <a href="{% url 'products' %}?subcategory=compressor_pedals" class="dropdown-item">Compressor Pedals</a>
-                <a href="{% url 'products' %}?subcategory=volume_pedals" class="dropdown-item">Volume Pedals</a>
-                <a href="{% url 'products' %}?subcategory=eq_pedals" class="dropdown-item">EQ Pedals</a>
-                <a href="{% url 'products' %}?subcategory=noise_gate_pedals" class="dropdown-item">Noise Gate Pedals</a>
-                <a href="{% url 'products' %}?subcategory=delay_pedals" class="dropdown-item">Delay Pedals</a>
-                <a href="{% url 'products' %}?subcategory=reverb_pedals" class="dropdown-item">Reverb Pedals</a>
-                <a href="{% url 'products' %}?subcategory=chorus_pedals" class="dropdown-item">Chorus Pedals</a>
-                <a href="{% url 'products' %}?subcategory=tremolo_pedals" class="dropdown-item">Tremolo Pedals</a>
-                <a href="{% url 'products' %}?subcategory=phaser_pedals" class="dropdown-item">Phaser Pedals</a>
-                <a href="{% url 'products' %}?subcategory=flanger_pedals" class="dropdown-item">Flanger Pedals</a>
-                <a href="{% url 'products' %}?subcategory=wah_pedals" class="dropdown-item">Wah Pedals</a>
-                <a href="{% url 'products' %}?subcategory=pitch_shifter_pedals" class="dropdown-item">Pitch Shifter Pedals</a>
-                <a href="{% url 'products' %}?subcategory=octave_pedals" class="dropdown-item">Octave Pedals</a>
-                <a href="{% url 'products' %}?subcategory=synth_pedals" class="dropdown-item">Synth Pedals</a>
-                <a href="{% url 'products' %}?subcategory=tuner_pedals" class="dropdown-item">Tuner Pedals</a>
-                <a href="{% url 'products' %}?subcategory=looper_pedals" class="dropdown-item">Looper Pedals</a>
-                <a href="{% url 'products' %}?subcategory=overdrive_pedals,fuzz_pedals,distortion_pedals,boost_pedals,compressor_pedals,volume_pedals,eq_pedals,noise_gate_pedals" class="dropdown-item">All Overdrive & Dynamic Pedals</a>
-                <a href="{% url 'products' %}?subcategory=delay_pedals,delay_pedals,reverb_pedals,chorus_pedals,tremolo_pedals,phaser_pedals,flanger_pedals" class="dropdown-item">All Modulation Pedals</a>
-                <a href="{% url 'products' %}?subcategory=wah_pedals,pitch_shifter_pedals,octave_pedals,synth_pedals" class="dropdown-item">All Pitch & Filter Pedals</a>
-                <a href="{% url 'products' %}?subcategory=tuner_pedals,looper_pedals" class="dropdown-item">All Utility Pedals</a>
-                <a href="{% url 'products' %}?subcategory=overdrive_pedals,fuzz_pedals,distortion_pedals,boost_pedals,compressor_pedals,volume_pedals,eq_pedals,noise_gate_pedals,delay_pedals,delay_pedals,reverb_pedals,chorus_pedals,tremolo_pedals,phaser_pedals,flanger_pedals,wah_pedals,pitch_shifter_pedals,octave_pedals,synth_pedals,tuner_pedals,looper_pedals" class="dropdown-item">All Pedals</a>
-            </div>
-        </li>
+            <li class="nav-item dropdown">
+                <a class="logo-font font-weight-bold nav-link text-white mr-5 hover" href="#" id="pedals-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Pedals
+                </a>
+                <div class="dropdown-menu border-0 scrollable-dropdown bg-dark" aria-labelledby="pedals-link">
+                    <a href="{% url 'products' %}?subcategory=overdrive_pedals" class="dropdown-item">Overdrive Pedals</a>
+                    <a href="{% url 'products' %}?subcategory=fuzz_pedals" class="dropdown-item">Fuzz Pedals</a>
+                    <a href="{% url 'products' %}?subcategory=distortion_pedals" class="dropdown-item">Distortion Pedals</a>
+                    <a href="{% url 'products' %}?subcategory=boost_pedals" class="dropdown-item">Boost Pedals</a>
+                    <a href="{% url 'products' %}?subcategory=compressor_pedals" class="dropdown-item">Compressor Pedals</a>
+                    <a href="{% url 'products' %}?subcategory=volume_pedals" class="dropdown-item">Volume Pedals</a>
+                    <a href="{% url 'products' %}?subcategory=eq_pedals" class="dropdown-item">EQ Pedals</a>
+                    <a href="{% url 'products' %}?subcategory=noise_gate_pedals" class="dropdown-item">Noise Gate Pedals</a>
+                    <a href="{% url 'products' %}?subcategory=delay_pedals" class="dropdown-item">Delay Pedals</a>
+                    <a href="{% url 'products' %}?subcategory=reverb_pedals" class="dropdown-item">Reverb Pedals</a>
+                    <a href="{% url 'products' %}?subcategory=chorus_pedals" class="dropdown-item">Chorus Pedals</a>
+                    <a href="{% url 'products' %}?subcategory=tremolo_pedals" class="dropdown-item">Tremolo Pedals</a>
+                    <a href="{% url 'products' %}?subcategory=phaser_pedals" class="dropdown-item">Phaser Pedals</a>
+                    <a href="{% url 'products' %}?subcategory=flanger_pedals" class="dropdown-item">Flanger Pedals</a>
+                    <a href="{% url 'products' %}?subcategory=wah_pedals" class="dropdown-item">Wah Pedals</a>
+                    <a href="{% url 'products' %}?subcategory=pitch_shifter_pedals" class="dropdown-item">Pitch Shifter Pedals</a>
+                    <a href="{% url 'products' %}?subcategory=octave_pedals" class="dropdown-item">Octave Pedals</a>
+                    <a href="{% url 'products' %}?subcategory=synth_pedals" class="dropdown-item">Synth Pedals</a>
+                    <a href="{% url 'products' %}?subcategory=tuner_pedals" class="dropdown-item">Tuner Pedals</a>
+                    <a href="{% url 'products' %}?subcategory=looper_pedals" class="dropdown-item">Looper Pedals</a>
+                    <a href="{% url 'products' %}?subcategory=overdrive_pedals,fuzz_pedals,distortion_pedals,boost_pedals,compressor_pedals,volume_pedals,eq_pedals,noise_gate_pedals" class="dropdown-item">All Overdrive & Dynamic Pedals</a>
+                    <a href="{% url 'products' %}?subcategory=delay_pedals,delay_pedals,reverb_pedals,chorus_pedals,tremolo_pedals,phaser_pedals,flanger_pedals" class="dropdown-item">All Modulation Pedals</a>
+                    <a href="{% url 'products' %}?subcategory=wah_pedals,pitch_shifter_pedals,octave_pedals,synth_pedals" class="dropdown-item">All Pitch & Filter Pedals</a>
+                    <a href="{% url 'products' %}?subcategory=tuner_pedals,looper_pedals" class="dropdown-item">All Utility Pedals</a>
+                    <a href="{% url 'products' %}?subcategory=overdrive_pedals,fuzz_pedals,distortion_pedals,boost_pedals,compressor_pedals,volume_pedals,eq_pedals,noise_gate_pedals,delay_pedals,delay_pedals,reverb_pedals,chorus_pedals,tremolo_pedals,phaser_pedals,flanger_pedals,wah_pedals,pitch_shifter_pedals,octave_pedals,synth_pedals,tuner_pedals,looper_pedals" class="dropdown-item">All Pedals</a>
+                </div>
+            </li>
 
-        <li class="nav-item dropdown bg-dark">
-            <a class="logo-font font-weight-bold nav-link text-white hover" href="#" id="accessories-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Accessories
-            </a>
-            <div class="dropdown-menu border-0 bg-dark" aria-labelledby="accessories-link">
-                <a href="{% url 'products' %}?subcategory=straps" class="dropdown-item">Guitar Straps</a>
-                <a href="{% url 'products' %}?subcategory=plectrums" class="dropdown-item">Plectrums</a>
-                <a href="{% url 'products' %}?subcategory=capos" class="dropdown-item">Capos</a>
-                <a href="{% url 'products' %}?subcategory=straps,plectrums,capos" class="dropdown-item">All Accessories</a>
-            </div>
-        </li>
-    </ul>
-    <ul class="list-unstyled d-lg-flex my-1 col-4 justify-content-end services-links">
-        <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-white hover" href="{% url 'faqs' %}">
-                FAQs
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-white hover" href="{% url 'contact' %}">
-                Contact
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-white hover" href="{% url 'newsletter' %}">
-                Newsletter
-            </a>
-        </li>
-    </ul>
-</div>
+            <li class="nav-item dropdown bg-dark">
+                <a class="logo-font font-weight-bold nav-link text-white hover" href="#" id="accessories-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Accessories
+                </a>
+                <div class="dropdown-menu border-0 bg-dark" aria-labelledby="accessories-link">
+                    <a href="{% url 'products' %}?subcategory=straps" class="dropdown-item">Guitar Straps</a>
+                    <a href="{% url 'products' %}?subcategory=plectrums" class="dropdown-item">Plectrums</a>
+                    <a href="{% url 'products' %}?subcategory=capos" class="dropdown-item">Capos</a>
+                    <a href="{% url 'products' %}?subcategory=straps,plectrums,capos" class="dropdown-item">All Accessories</a>
+                </div>
+            </li>
+        </ul>
+        <ul class="list-unstyled d-lg-flex my-1 col-4 justify-content-end services-links">
+            <li class="nav-item">
+                <a class="logo-font font-weight-bold nav-link text-white hover" href="{% url 'faqs' %}">
+                    FAQs
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="logo-font font-weight-bold nav-link text-white hover" href="{% url 'contact' %}">
+                    Contact
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="logo-font font-weight-bold nav-link text-white hover" href="{% url 'newsletter' %}">
+                    Newsletter
+                </a>
+            </li>
+        </ul>
+    </div>
+</li>
