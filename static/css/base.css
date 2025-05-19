@@ -12,6 +12,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+.container.h-100 {
+    margin-bottom: 36px;
+}
+
 h1, h2, h3,
 h4, h5, h6 {
     font-family: "Radio Canada Big", sans-serif;
@@ -24,6 +28,17 @@ h4, h5, h6 {
     height: 1.5rem;
     width: 1.5rem;
 }
+
+/* -36px from vh to allow for footer */
+.h-100-36 {
+    min-height: calc(100vh - 36px)
+}
+
+.text-orange {
+    color: orangered;
+}
+
+/* Header --------------------------------------------------*/
 
 .logo {
     height: 100px;
@@ -42,6 +57,8 @@ h4, h5, h6 {
     background-color: orangered;
     box-shadow: #000 2px 3px 2px 2px;
 }
+
+/* Body --------------------------------------------------*/
 
 .shop-now-button {
     background-color: orangered;
@@ -80,6 +97,16 @@ h4, h5, h6 {
 	position: fixed;
 	background: white;
 	z-index: -1;
+}
+
+/* Footer --------------------------------------------------*/
+
+footer {
+    font-size: 1.5em;
+}
+
+footer a {
+    margin: 0 1.5em;
 }
 
 /* Navigation --------------------------------------------------*/
