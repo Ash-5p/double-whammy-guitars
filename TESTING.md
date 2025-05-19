@@ -56,10 +56,9 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Directory | File | URL | Screenshot | Notes |
 | --- | --- | --- | --- | --- |
-| main | [settings.py](https://github.com/Ash-5p/double-whammy-guitars/blob/main/main/settings.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Ash-5p/double-whammy-guitars/main/main/settings.py) | ![screenshot](documentation/validation/py-main-settings.png) | Notes (if applicable) |
-| main | [urls.py](https://github.com/Ash-5p/double-whammy-guitars/blob/main/main/urls.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Ash-5p/double-whammy-guitars/main/main/urls.py) | ![screenshot](documentation/validation/py-main-urls.png) | Notes (if applicable) |
-|  | [manage.py](https://github.com/Ash-5p/double-whammy-guitars/blob/main/manage.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Ash-5p/double-whammy-guitars/main/manage.py) | ![screenshot](documentation/validation/py--manage.png) | Notes (if applicable) |
-|  | [test.py](https://github.com/Ash-5p/double-whammy-guitars/blob/main/test.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Ash-5p/double-whammy-guitars/main/test.py) | ![screenshot](documentation/validation/py--test.png) | Notes (if applicable) |
+| bag | [bag.html](https://github.com/Ash-5p/double-whammy-guitars/blob/main/bag/templates/bag/bag.html) | [HTML W3C Validator Link](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdouble-whammy-guitars-47bed68ef1db.herokuapp.com%2Fbag%2F) | ![screenshot](documentation/validation/html-bag.png) | Notes (if applicable) |
+| checkout | [checkout.html](https://github.com/Ash-5p/double-whammy-guitars/blob/main/checkout/templates/checkout/checkout.html) | [HTML W3C Validator Link](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdouble-whammy-guitars-47bed68ef1db.herokuapp.com%2Fcheckout) | ![screenshot](documentation/validation/html-checkout.png) | Notes (if applicable) |
+| checkout | [checkout_success.html](https://github.com/Ash-5p/double-whammy-guitars/blob/main/checkout/templates/checkout/checkout_success.html) | [HTML W3C Validator Link](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdouble-whammy-guitars-47bed68ef1db.herokuapp.com%2Fcheckout%2Fcheckout_success%2FFB34A71ADADE4A12B05D07A1CDF16E5B) | ![screenshot](documentation/validation/html-checkout_success.png) | Notes (if applicable) |
 
 ### CSS
 
