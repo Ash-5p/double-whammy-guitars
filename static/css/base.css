@@ -55,7 +55,7 @@ h4, h5, h6 {
 
 .delivery-banner {
     background-color: orangered;
-    box-shadow: #000 2px 3px 2px 2px;
+    box-shadow: #000 0px 5px 14px 4px;
 }
 
 /* Body --------------------------------------------------*/
@@ -108,6 +108,8 @@ h4, h5, h6 {
 
 footer {
     font-size: 1.5em;
+    border-top: solid orangered 1px;
+    box-shadow: black 0px 3px 20px 7px;
 }
 
 footer a {
