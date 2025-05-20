@@ -27,12 +27,13 @@ def newsletter(request):
         if form.is_valid():
             newsletter = form.save()
             messages.success(request, 'Successfully signed up to newsletter!')
-            send_confirmation_email(newsletter.email)  # Pass the email here
+            send_confirmation_email(newsletter.email)
             return redirect(reverse('home'))
         else:
             messages.error(
                 request,
-                'Newsletter subscription failed. Please ensure the form is valid.')
+                'Newsletter subscription failed.'
+                ' Please ensure the form is valid.')
     else:
         form = NewsletterForm()
 

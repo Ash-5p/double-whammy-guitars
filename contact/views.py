@@ -26,7 +26,8 @@ def contact(request):
         form = ContactForm(request.POST, request.FILES)
         if form.is_valid():
             contact = form.save()
-            messages.success(request, 'Your message was successfully submitted!')
+            messages.success(
+                request, 'Your message was successfully submitted!')
             send_confirmation_email(contact)
             return redirect(reverse('contact'))
         else:
