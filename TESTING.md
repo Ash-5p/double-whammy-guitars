@@ -23,35 +23,6 @@ Use the space below to discuss code validation for all of your own code files (*
 
 ### HTML
 
-⚠️ INSTRUCTIONS ⚠️
-
-1. [*recommended*] If you are using the live deployed site URLs, validate using this link: https://validator.w3.org/#validate_by_uri
-2. Otherwise, if you are copying/pasting your HTML code manually, use this link: https://validator.w3.org/#validate_by_input
-
-It's recommended to validate the live pages (all of them) using the deployed URL. This will give you a custom URL as well, which you can use below on your testing documentation. It makes it easier to return back to a page for validating it again in the future. The URL will look something like this:
-
-- https://validator.w3.org/nu/?doc=https://Ash-5p.github.io/double-whammy-guitars/index.html
-
-⚠️ --- END --- ⚠️
-
-🛑 IMPORTANT 🛑
-
-RE: Python/Jinja syntax in HTML
-
-Python projects that use Jinja syntax, such as `{% for loops %}`, `{% url 'home' %}`, and `{{ variable|filter }}` will not validate properly if you're copying/pasting into the HTML validator.
-
-In order to properly validate these types of files, it's recommended to [validate by uri](https://validator.w3.org/#validate_by_uri) from the deployed Heroku pages.
-
-Unfortunately, pages that require a user to be "logged-in" and authenticated (CRUD functionality) will not work using this method, due to the fact that the HTML Validator (W3C) doesn't have access to login to an account on your project. In order to properly validate HTML pages with Jinja syntax for authenticated pages, follow these steps:
-
-- Navigate to the deployed pages which require authentication.
-- Right-click anywhere on the page, and select **View Page Source** (usually `CTRL+U` or `⌘+U` on Mac).
-- This will display the entire "compiled" code, without any Jinja syntax.
-- Copy everything, and use the [validate by input](https://validator.w3.org/#validate_by_input) method.
-- Repeat this process for every page that requires a user to be logged-in/authenticated (e.g.: CRUD functionality).
-
-🛑 ---- END --- 🛑
-
 I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
 
 | Directory | File | URL | Screenshot | Notes |
@@ -68,55 +39,30 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | products | [product_details.html](https://github.com/Ash-5p/double-whammy-guitars/blob/main/products/templates/products/product_details.html) | [HTML W3C Validator Link](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdouble-whammy-guitars-47bed68ef1db.herokuapp.com%2Fproducts%2F1%2F) | ![screenshot](documentation/validation/html-product_details.png) | Notes (if applicable) |
 | products | [add_product.html](https://github.com/Ash-5p/double-whammy-guitars/blob/main/products/templates/products/add_product.html) | No link provided | ![screenshot](documentation/validation/html-products.png) | No W3C link provided. Could not check by ERI due to page requiring authentication. |
 | products | [edit_product.html](https://github.com/Ash-5p/double-whammy-guitars/blob/main/products/templates/products/edit_product.html) | No link provided | ![screenshot](documentation/validation/html-edit_product.png) | No W3C link provided. Could not check by ERI due to page requiring authentication. |
+| profiles | [product_details.html](https://github.com/Ash-5p/double-whammy-guitars/blob/main/profiles/templates/profiles/profile.html) | No link provided | ![screenshot](documentation/validation/html-profile.png) | No W3C link provided. Could not check by ERI due to page requiring authentication. |
 
 ### CSS
 
-⚠️ INSTRUCTIONS ⚠️
-
-1. [*recommended*] If you are using the live deployed site, use this link: https://jigsaw.w3.org/css-validator/#validate_by_uri
-2. If you are copying/pasting your CSS code, use this link: https://jigsaw.w3.org/css-validator/#validate_by_input
-
-It's recommended to validate the live site for your primary CSS file on the deployed URL. This will give you a custom URL as well, which you can use below on your testing documentation. It makes it easier to return back to a page for validating it again in the future. The URL will look something like this:
-
-- https://jigsaw.w3.org/css-validator/validator?uri=https://double-whammy-guitars-47bed68ef1db.herokuapp.com
-
-If you have additional/multiple CSS files, then individual "[validation by input](https://jigsaw.w3.org/css-validator/#validate_by_input)" is recommended for the extra CSS files.
-
-**IMPORTANT**: Third-Party tools
-
-If you're using external libraries/frameworks (e.g: Bootstrap, Materialize, Font Awesome, etc.), then sometimes the tool will attempt to also validate these, even though it's not part of your own actual code that you wrote. You are not required to validate the external libraries or frameworks!
-
-⚠️ --- END --- ⚠️
-
 I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
 
-
+| Directory | File | URL | Screenshot | Notes |
+| --- | --- | --- | --- | --- |
+| templates | [base.css](https://github.com/Ash-5p/double-whammy-guitars/blob/main/static/css/base.css) | [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdouble-whammy-guitars-47bed68ef1db.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) | ![screenshot](documentation/validation/css-base.png) | Notes (if applicable) |
+| checkout | [checkout.css](https://github.com/Ash-5p/double-whammy-guitars/blob/main/checkout/static/checkout/css/checkout.css) | No link provided | ![screenshot](documentation/validation/css-checkout.png) | No able to validate via URI |
+| products | [products.css](https://github.com/Ash-5p/double-whammy-guitars/blob/main/products/static/products/css/products.css) | No link provided | ![screenshot](documentation/validation/css-products.png) | No able to validate via URI |
+| profiles | [profile.css](https://github.com/Ash-5p/double-whammy-guitars/blob/main/profiles/static/profiles/css/profile.css) | No link provided | ![screenshot](documentation/validation/css-profile.png) | No able to validate via URI |
 
 ### JavaScript
 
-⚠️ INSTRUCTIONS ⚠️
-
-If using modern JavaScript (ES6) methods, then make sure to include the following line at the very top of every single JavaScript file in your project (this should remain in your files for submission as well):
-
-`/* jshint esversion: 11 */`
-
-If you are also including jQuery (`$`), then the updated format will be:
-
-`/* jshint esversion: 11, jquery: true */`
-
-This allows the JShint validator to recognize modern ES6 methods, such as: `let`, `const`, `template literals`, `arrow functions (=>)`, etc.
-
-**IMPORTANT**: External resources
-
-Sometimes we'll write JavaScript that imports variables from other files, such as "an array of questions" from `questions.js`, which are used within the main `script.js` file elsewhere. If that's the case, the JShint validation tool doesn't know how to recognize "unused variables" that would normally be imported locally when running your own project. These warnings are acceptable, so showcase on your screenshot(s).
-
-The same thing applies when using external libraries such as Stripe, Leaflet, Bootstrap, Materialize, etc. To instantiate these components, we need to use their respective declarator. Again, the JShint validation tool would flag these as "undefined/unused variables". These warnings are acceptable, so showcase on your screenshot(s).
-
-⚠️ --- END --- ⚠️
-
 I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files.
 
-
+| Directory | File | Screenshot | Notes |
+| --- | --- | --- | --- |
+| checkout | [stripe_elements.js](https://github.com/Ash-5p/double-whammy-guitars/blob/main/checkout/static/checkout/js/stripe_elements.js) | ![screenshot](documentation/validation/js-stripe_elements.png) | One unknown variable is from external Stripe library |
+| faqs | [faqs.js](https://github.com/Ash-5p/double-whammy-guitars/blob/main/faqs/static/js/faqs.js) | ![screenshot](documentation/validation/js-faqs.png) | One unknown variable is from external bootstrap library |
+| products | [products.js](https://github.com/Ash-5p/double-whammy-guitars/blob/main/products/static/products/js/products.js) | ![screenshot](documentation/validation/js-products.png) | One unknown variable is from external bootstrap library |
+| products | [sorting.js](https://github.com/Ash-5p/double-whammy-guitars/blob/main/products/static/products/js/sorting.js) | ![screenshot](documentation/validation/js-sorting.png) | |
+| profiles | [countryfield.js](https://github.com/Ash-5p/double-whammy-guitars/blob/main/profiles/static/profiles/js/countryfield.js) | ![screenshot](documentation/validation/js-countryfield.png) | |
 
 ### Python
 
@@ -175,11 +121,12 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 | Directory | File | URL | Screenshot | Notes |
 | --- | --- | --- | --- | --- |
-| main | [settings.py](https://github.com/Ash-5p/double-whammy-guitars/blob/main/main/settings.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Ash-5p/double-whammy-guitars/main/main/settings.py) | ![screenshot](documentation/validation/py-main-settings.png) | Notes (if applicable) |
-| main | [urls.py](https://github.com/Ash-5p/double-whammy-guitars/blob/main/main/urls.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Ash-5p/double-whammy-guitars/main/main/urls.py) | ![screenshot](documentation/validation/py-main-urls.png) | Notes (if applicable) |
-|  | [manage.py](https://github.com/Ash-5p/double-whammy-guitars/blob/main/manage.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Ash-5p/double-whammy-guitars/main/manage.py) | ![screenshot](documentation/validation/py--manage.png) | Notes (if applicable) |
-|  | [test.py](https://github.com/Ash-5p/double-whammy-guitars/blob/main/test.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Ash-5p/double-whammy-guitars/main/test.py) | ![screenshot](documentation/validation/py--test.png) | Notes (if applicable) |
-
+| bag | [bag_tools.py](https://github.com/Ash-5p/double-whammy-guitars/blob/main/main/settings.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Ash-5p/double-whammy-guitars/refs/heads/main/bag/templatetags/bag_tools.py) | ![screenshot](documentation/validation/py-bag-bag_tools.png) | Notes (if applicable) |
+| bag | [contexts.py](https://github.com/Ash-5p/double-whammy-guitars/blob/main/bag/contexts.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Ash-5p/double-whammy-guitars/refs/heads/main/bag/contexts.py) | ![screenshot](documentation/validation/py-bag-contexts.png) | Notes (if applicable) |
+| bag | [urls.py](https://github.com/Ash-5p/double-whammy-guitars/blob/main/bag/urls.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Ash-5p/double-whammy-guitars/refs/heads/main/bag/urls.py) | ![screenshot](documentation/validation/py-bag-urls.png) | Notes (if applicable) |
+| bag | [views.py](https://github.com/Ash-5p/double-whammy-guitars/blob/main/bag/views.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Ash-5p/double-whammy-guitars/refs/heads/main/bag/views.py) | ![screenshot](documentation/validation/py-bag-views.png) | Notes (if applicable) |
+| checkout | [admin.py](https://github.com/Ash-5p/double-whammy-guitars/blob/main/checkout/admin.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Ash-5p/double-whammy-guitars/refs/heads/main/checkout/admin.py) | ![screenshot](documentation/validation/py-checkout-admin.png) | Notes (if applicable) |
+| checkout | [forms.py](https://github.com/Ash-5p/double-whammy-guitars/blob/main/checkout/forms.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Ash-5p/double-whammy-guitars/refs/heads/main/checkout/forms.py) | ![screenshot](documentation/validation/py-checkout-forms.png) | Notes (if applicable) |
 
 ## Responsiveness
 

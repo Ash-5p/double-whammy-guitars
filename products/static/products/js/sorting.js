@@ -1,9 +1,11 @@
+/* jshint esversion: 11, jquery: true */
+
 document.addEventListener("DOMContentLoaded", function () {
 
     $('.btt-link').click(function(e) {
-        window.scrollTo(0,0)
+        window.scrollTo(0,0);
         }
-    )
+    );
 
     $('#sort-selector').change(function() {
         var selector = $(this);
@@ -21,5 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
             window.location.replace(currentUrl);
             }
         }
-    )}
+    );
+	}
 );

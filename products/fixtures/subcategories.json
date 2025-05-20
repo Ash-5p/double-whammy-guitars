@@ -75,7 +75,7 @@
         "model": "products.subcategory",
         "pk": 10,
         "fields": {
-            "name": "eq__pedals",
+            "name": "eq_pedals",
             "friendly_name": "EQ Pedals"
         }
     },
