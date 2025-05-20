@@ -84,7 +84,7 @@ def edit_faq(request, faq_id):
                 'Failed to update FAQ. Please ensure the form is valid.')
     else:
         form = FAQForm(instance=faq)
-        messages.info(request, f'You are editing {faq.question}')
+        messages.info(request, f'You are editing FAQ "{faq.question}"')
 
     template = 'faqs/edit_faq.html'
     context = {

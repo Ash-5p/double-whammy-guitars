@@ -59,6 +59,9 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | bag | [bag.html](https://github.com/Ash-5p/double-whammy-guitars/blob/main/bag/templates/bag/bag.html) | [HTML W3C Validator Link](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdouble-whammy-guitars-47bed68ef1db.herokuapp.com%2Fbag%2F) | ![screenshot](documentation/validation/html-bag.png) | Notes (if applicable) |
 | checkout | [checkout.html](https://github.com/Ash-5p/double-whammy-guitars/blob/main/checkout/templates/checkout/checkout.html) | [HTML W3C Validator Link](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdouble-whammy-guitars-47bed68ef1db.herokuapp.com%2Fcheckout) | ![screenshot](documentation/validation/html-checkout.png) | Notes (if applicable) |
 | checkout | [checkout_success.html](https://github.com/Ash-5p/double-whammy-guitars/blob/main/checkout/templates/checkout/checkout_success.html) | [HTML W3C Validator Link](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdouble-whammy-guitars-47bed68ef1db.herokuapp.com%2Fcheckout%2Fcheckout_success%2FFB34A71ADADE4A12B05D07A1CDF16E5B) | ![screenshot](documentation/validation/html-checkout_success.png) | Notes (if applicable) |
+| contact | [contact.html](https://github.com/Ash-5p/double-whammy-guitars/blob/main/contact/templates/contact/contact.html) | [HTML W3C Validator Link](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdouble-whammy-guitars-47bed68ef1db.herokuapp.com%2Fcontact%2F) | ![screenshot](documentation/validation/html-contact.png) | Notes (if applicable) |
+| faqs | [contact.html](https://github.com/Ash-5p/double-whammy-guitars/blob/main/faqs/templates/faqs/faqs.html) | [HTML W3C Validator Link](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdouble-whammy-guitars-47bed68ef1db.herokuapp.com%2Ffaqs%2F) | ![screenshot](documentation/validation/html-faqs.png) | Notes (if applicable) |
+
 
 ### CSS
 
