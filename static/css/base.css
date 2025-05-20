@@ -260,12 +260,16 @@ a:not([href]){
     color: white;
 }
 
-/* Controls --------------------------------------------------*/
+/* Bag --------------------------------------------------*/
 
 .bag-img {
     width: 100%;
     height: auto;
     max-width: 100px;
+}
+
+.product-form a {
+    overflow-wrap: anywhere;
 }
 
 /* ------------------------------- bootstrap toasts */
