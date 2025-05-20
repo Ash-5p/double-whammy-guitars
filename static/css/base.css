@@ -465,6 +465,10 @@ a:not([href]){
         border-radius: 5px;
     }
 
+    .top-spacer {
+        height: 30px;
+    }
+
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
