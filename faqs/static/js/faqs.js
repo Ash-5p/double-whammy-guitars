@@ -19,17 +19,19 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
     $('.btt-link').click(function(e) {
-        e.preventDefault();
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         });
-    });
+        
     $('.gtb-link').click(function(e) {
-        e.preventDefault();
-        window.scrollTo({
-            top: document.body.scrollHeight,
-            behavior: 'smooth'
+            e.preventDefault();
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
         });
-    });
-});
+    }
+);

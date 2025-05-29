@@ -32,23 +32,23 @@
                 </div>
             </div>
 
-        <div class="row">
-            <div class="col">
-                {% for faq in faqs %}
-                    <div class="row"><div class="col-12"><h3>{{ faq.question }}</h3></div></div>
-                    <br>
-                    <div class="row"><div class="col-12"><strong>Answer: </strong>{{ faq.answer }}</div></div>
-                    <div class="row"><div class="col-12"><small><strong>Updated On: </strong>{{ faq.updated_on }}</small></div></div>
-                    {% if request.user.is_superuser %}
-                        <small class="ml-3">
-                            <a class="btn-primary btn-admin" href="{% url 'edit_faq' faq.id %}">Edit</a>
-                            <a class="btn-danger btn-admin delete-btn" aria-label="delete" data-faq_id="{{ faq.id }}">Delete</a>
-                        </small>
-                    {% endif %}
-                <hr>
-                {% endfor %}
+            <div class="row">
+                <div class="col">
+                    {% for faq in faqs %}
+                        <div class="row"><div class="col-12"><h3>{{ faq.question }}</h3></div></div>
+                        <br>
+                        <div class="row"><div class="col-12"><strong>Answer: </strong>{{ faq.answer }}</div></div>
+                        <div class="row"><div class="col-12"><small><strong>Updated On: </strong>{{ faq.updated_on }}</small></div></div>
+                        {% if request.user.is_superuser %}
+                            <small class="ml-3">
+                                <a class="btn-primary btn-admin" href="{% url 'edit_faq' faq.id %}">Edit</a>
+                                <a class="btn-danger btn-admin delete-btn" aria-label="delete" data-faq_id="{{ faq.id }}">Delete</a>
+                            </small>
+                        {% endif %}
+                    <hr>
+                    {% endfor %}
+                </div>
             </div>
-        </div>
             {% if request.user.is_superuser %}
                 <div class="row">
                     <div class="col">
@@ -64,7 +64,13 @@
                         </form>
                     </div>      
                 </div>
-            {% endif %}    
+            {% endif %}
+            <div class="btt-button shadow-sm text-white border-black mb-5">
+                <a class="btt-link d-flex h-100">
+                    <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+                </a>	
+            </div>
+
             <!-- Delete confirmation modal -->
             <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
@@ -83,16 +89,11 @@
                             <button type="button" aria-label="close" class="btn btn-dark" data-dismiss="modal">
                                 Close
                             </button>
-                            <a id="deleteConfirm" aria-label="confirm" href="#" class="btn btn-danger" data-dismiss="modal">Delete</a>
+                            <a id="deleteConfirm" aria-label="confirm" href="#" class="btn btn-danger">Delete</a>
                         </div>
                     </div>
                 </div>
             </div>   
-        </div>
-        <div class="btt-button shadow-sm text-white border-black mb-5">
-            <a class="btt-link d-flex h-100">
-                <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
-            </a>	
         </div>
 {% endblock %}
 
