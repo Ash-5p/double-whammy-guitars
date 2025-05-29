@@ -16,4 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
           deleteConfirm.href = `/faqs/delete/${faqId}/`;
           deleteModal.show();
         });
-      }});
+      }
+    $('.btt-link').click(function(e) {
+        window.scrollTo(0,0);
+        }
+    );
+    $('.gtb-link').click(function(e) {
+        window.scrollTo(0,document.body.scrollHeight);
+        }
+    );
+    });

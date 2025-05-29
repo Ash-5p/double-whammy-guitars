@@ -14,7 +14,16 @@
         <div class="container">
             <div class="row">
                 <div class="col mt-5">
-                    <h2 class="logo-font mb-4 mt-lg-5">FAQs</h2>
+                    <div class="d-flex justify-content-between mb-4 mt-lg-5">
+                    <h2 class="logo-font">FAQs</h2>
+                    {% if request.user.is_superuser %}
+                        <div class="gtb-button text-right">
+                            <a class="btn btn-orange gtb-link">
+                                <i class="fas fa-arrow-down mx-auto my-auto"></i> Add FAQ
+                            </a>	
+                        </div>
+                    {% endif %}
+                </div>
                     <hr>
                     <p><em>Can't find an answer to your question? Give us a call on 01782 555 123, email us at 
                         doublewhammyguitars@gmail.com or visit our <a href="{% url 'contact' %}">Contact Us</a> page.</em>
@@ -80,9 +89,14 @@
                 </div>
             </div>   
         </div>
+        <div class="btt-button shadow-sm text-white border-black mb-5">
+            <a class="btt-link d-flex h-100">
+                <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+            </a>	
+        </div>
 {% endblock %}
 
 {% block postloadjs %}
 {{ block.super }}
-<script src="{% static 'js/faqs.js' %}"></script>
+    <script src="{% static 'js/faqs.js' %}"></script>
 {% endblock %}
