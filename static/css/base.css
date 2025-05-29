@@ -222,6 +222,10 @@ input[name='q']::placeholder {
     color: white;
 }
 
+.admin-controls {
+    color: orangered;
+}
+
 /* Controls --------------------------------------------------*/
 
 .increment-qty, .decrement-qty {

@@ -95,7 +95,8 @@
             <div class="dropdown-menu border-0 bg-dark text-white" aria-labelledby="user-options">
               {% if request.user.is_authenticated %}
               {% if request.user.is_superuser %}
-              <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+              <a href="{% url 'admin:index' %}" class="dropdown-item admin-controls">Admin Panel</a>
+              <a href="{% url 'add_product' %}" class="dropdown-item admin-controls">Product Management</a>
               {% endif %}
               <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
               <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
