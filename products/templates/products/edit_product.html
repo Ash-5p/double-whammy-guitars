@@ -23,6 +23,7 @@
 
         <div class="row">
             <section class="col-12 col-md-6">
+                <h5 class="d-none">Edit a Product</h5>
                 <form method="POST" action="{% url 'edit_product' product.id %}" class="form product-form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
