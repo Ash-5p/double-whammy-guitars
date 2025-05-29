@@ -1,4 +1,4 @@
-/* jshint esversion: 11 */
+/* jshint esversion: 11, jquery: true */
 
 document.addEventListener("DOMContentLoaded", function () {
     
@@ -17,12 +17,19 @@ document.addEventListener("DOMContentLoaded", function () {
           deleteModal.show();
         });
       }
+
     $('.btt-link').click(function(e) {
-        window.scrollTo(0,0);
-        }
-    );
-    $('.gtb-link').click(function(e) {
-        window.scrollTo(0,document.body.scrollHeight);
-        }
-    );
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     });
+    $('.gtb-link').click(function(e) {
+        e.preventDefault();
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: 'smooth'
+        });
+    });
+});

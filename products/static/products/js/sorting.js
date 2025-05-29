@@ -3,9 +3,12 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     $('.btt-link').click(function(e) {
-        window.scrollTo(0,0);
-        }
-    );
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
 
     $('#sort-selector').change(function() {
         var selector = $(this);
