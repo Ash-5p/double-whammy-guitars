@@ -29,11 +29,6 @@ h4, h5, h6 {
     width: 1.5rem;
 }
 
-/* -36px from vh to allow for footer */
-.h-100-36 {
-    min-height: calc(100vh - 36px)
-}
-
 .text-orange {
     color: orangered;
 }

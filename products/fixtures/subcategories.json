@@ -206,5 +206,13 @@
             "name": "straps",
             "friendly_name": "Straps"
         }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 27,
+        "fields": {
+            "name": "strings",
+            "friendly_name": "Strings"
+        }
     }
 ]

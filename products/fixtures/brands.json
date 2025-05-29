@@ -54,5 +54,13 @@
             "name": "orange",
             "friendly_name": "Orange"
         }
+    },
+    {
+        "model": "products.brand",
+        "pk": 8,
+        "fields": {
+            "name": "ernie_ball",
+            "friendly_name": "Ernie Ball"
+        }
     }
 ]

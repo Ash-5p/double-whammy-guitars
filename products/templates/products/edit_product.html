@@ -22,7 +22,7 @@
         </div>
 
         <div class="row">
-            <div class="col-12 col-md-6">
+            <section class="col-12 col-md-6">
                 <form method="POST" action="{% url 'edit_product' product.id %}" class="form product-form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
@@ -37,7 +37,7 @@
                         <button class="btn btn-orange " type="submit">Update Product</button>
                     </div>
                 </form>
-            </div>            
+            </section>            
         </div>
     </div>
 {% endblock %}
