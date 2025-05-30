@@ -36,9 +36,9 @@
 }
 
 select#sort-selector {
-  background: orangered;
+  background: #FF4500;
   border-radius: 5px;
-  color: white;
+  color: #000;
 }
 
 

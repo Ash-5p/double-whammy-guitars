@@ -30,7 +30,7 @@ h4, h5, h6 {
 }
 
 .text-orange {
-    color: orangered;
+    color: #FF4500;
 }
 
 /* Header --------------------------------------------------*/
@@ -49,7 +49,7 @@ h4, h5, h6 {
 }
 
 .delivery-banner {
-    background-color: orangered;
+    background-color: #FF4500;
     box-shadow: #000 0px 5px 14px 4px;
 }
 
@@ -60,7 +60,7 @@ h4, h5, h6 {
 /* Body --------------------------------------------------*/
 
 .shop-now-button {
-    background-color: orangered;
+    background-color: #FF4500;
     box-shadow: #000 2px 3px 5px;
     min-width: 260px;
     opacity: 0.9;
@@ -107,7 +107,7 @@ h4, h5, h6 {
 
 footer {
     font-size: 1.5em;
-    border-top: solid orangered 1px;
+    border-top: solid #FF4500 1px;
     box-shadow: black 0px 3px 20px 7px;
 }
 
@@ -119,8 +119,8 @@ footer a {
 
 .allauth-form-inner-content .btn-orange,
 .btn-orange {
-    background: orangered;
-    color: white;
+    background: #FF4500;
+    color: #000;
     border-radius: .25rem;
     border: 1px solid transparent;
 }
@@ -193,14 +193,14 @@ input[name='q']::placeholder {
 }
 
 .search-bar button {
-    background-color: orangered;
+    background-color: #FF4500;
     border-top: black solid 1px;
     border-right: black solid 1px;
     border-bottom: black solid 1px;
 }
 
 .bag {
-    color: orangered;
+    color: #FF4500;
 }
 
 .scrollable-dropdown {
@@ -218,13 +218,18 @@ input[name='q']::placeholder {
 }
 
 .admin-controls {
-    color: orangered;
+    color: #FF4500;
+}
+
+p > a.allauth-link,
+a {
+    color: #181877
 }
 
 /* Controls --------------------------------------------------*/
 
 .increment-qty, .decrement-qty {
-    background-color: orangered;
+    background-color: #FF4500;
 }
 
 .qty-form-container {
@@ -468,7 +473,7 @@ a:not([href]){
     }
 
     .hover:hover {
-        background-color: orangered;
+        background-color: #FF4500;
         border-radius: 5px;
     }
 
