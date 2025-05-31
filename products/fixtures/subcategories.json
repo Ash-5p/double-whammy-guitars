@@ -214,5 +214,13 @@
             "name": "strings",
             "friendly_name": "Strings"
         }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 28,
+        "fields": {
+            "name": "amps",
+            "friendly_name": "Amps"
+        }
     }
 ]

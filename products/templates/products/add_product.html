@@ -49,5 +49,45 @@
             var file = $('#new-image')[0].files[0];
             $('#filename').text(`Image will be set to: ${file.name}`);
         });
+        $(document).ready(function () {
+        const $subcategory = $('#id_subcategory');
+        const $category = $('#id_category');
+        const originalSubcategories = $subcategory.find('option').clone();
+
+        function filterSubcategories() {
+            const selectedText = $category.find("option:selected").text().toLowerCase();
+            let filteredOptions;
+
+            if (selectedText.includes('guitars') || selectedText.includes('amps') || selectedText.includes('pedals')) {
+                // Show only matching subcategories
+                filteredOptions = originalSubcategories.filter(function () {
+                    return $(this).text().toLowerCase().includes(selectedText);
+                });
+            } else {
+                // Show all except guitar|amp|pedal subcategories
+                filteredOptions = originalSubcategories.filter(function () {
+                    const text = $(this).text().toLowerCase();
+                    return !text.includes('guitars') && !text.includes('amps') && !text.includes('pedals');
+                });
+            }
+
+            const currentValue = $subcategory.val();
+            $subcategory.empty().append($('<option>', {
+                value: '',
+                text: ''
+            })).append(filteredOptions);
+
+            // Try to preserve the previously selected value, if still present
+            if (filteredOptions.filter(`[value="${currentValue}"]`).length > 0) {
+                $subcategory.val(currentValue);
+            }
+        }
+
+        // Initial filtering on page load
+        filterSubcategories();
+
+        // Re-filter when category changes
+        $category.change(filterSubcategories);
+    });
     </script>
 {% endblock %}

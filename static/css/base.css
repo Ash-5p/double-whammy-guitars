@@ -98,6 +98,20 @@ h4, h5, h6 {
 	z-index: -1;
 }
 
+main {
+    padding-bottom: 6em;
+}
+
+/* FAQs --------------------------------------------------*/
+
+#id_question {
+    height: 3em;
+}
+
+#id_answer {
+    height: 7em;
+}
+
 /* Footer --------------------------------------------------*/
 
 /* Prevents footer overlapping content at bottom of page */
@@ -263,6 +277,8 @@ a {
 a:not([href]){
     color: white;
 }
+
+
 
 /* Bag --------------------------------------------------*/
 
