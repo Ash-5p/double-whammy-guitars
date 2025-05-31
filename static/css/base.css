@@ -213,8 +213,13 @@ input[name='q']::placeholder {
     border-bottom: black solid 1px;
 }
 
-.bag {
+.bag-logo {
     color: #FF4500;
+}
+
+.bag,
+.bag:hover {
+    color: #fff;
 }
 
 .scrollable-dropdown {
@@ -262,6 +267,7 @@ a {
 }
 
 .btn-admin {
+    color: #000;
     border: #000 solid 1px;
     padding: 1px 2px;
     border-radius: 2px; 
@@ -275,7 +281,7 @@ a {
 }
 
 a:not([href]){
-    color: white;
+    color: #000;
 }
 
 
