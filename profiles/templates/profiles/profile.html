@@ -24,7 +24,7 @@
         </div>
         <div class="row">
             <section class="col-12 col-lg-6">
-                <h6 class="text-muted">Default Delivery Information</h6>
+                <small class="text-muted"><strong>Default Delivery Information</strong></small>
                 <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
                     {% csrf_token %}
                     {{ form|crispy }}
@@ -32,7 +32,7 @@
                 </form>
             </section>
             <section class="col-12 col-lg-6">
-                <h6 class="text-muted">Order History</h6>
+                <small class="text-muted"><strong>Order History</strong></small>
                 <div class="order-history table-responsive">
                     <table class="table table-sm table-borderless">
                         <thead>

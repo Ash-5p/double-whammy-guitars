@@ -1,4 +1,3 @@
-
 from django import forms
 from .models import Order
 
@@ -14,7 +13,7 @@ class OrderForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         """
         Add placeholders and classes, remove auto-generated
-        labels and set autofocus on first field
+        labels (except for country) and set autofocus on first field
         """
         super().__init__(*args, **kwargs)
         placeholders = {
@@ -36,5 +35,13 @@ class OrderForm(forms.ModelForm):
                 else:
                     placeholder = placeholders[field]
                 self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = 'stripe-style-input'
-            self.fields[field].label = False
+                self.fields[field].label = False
+            else:
+                self.fields['country'].label = 'Country'
+                self.fields['country'].widget.attrs.update({
+                    'class': 'stripe-style-input lazyselect form-control',
+                    'required': 'required',
+                })
+            self.fields[field].widget.attrs['class'] = (
+                self.fields[field].widget.attrs.get(
+                 'class', '') + ' stripe-style-input')
