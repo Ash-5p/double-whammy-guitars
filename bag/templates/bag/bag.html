@@ -133,11 +133,33 @@
 {% include 'products/includes/quantity_input_script.html' %}
 <script>
     
-    // Update quantity on click
-    $('.update-link').click(function(e) {
-        var form = $(this).prev('.update-form');
-        form.submit();
-    })
+    let keyIsDown = false;
+
+    // Track if any key is currently being pressed
+    $(document).keydown(function () {
+        keyIsDown = true;
+    });
+    $(document).keyup(function () {
+        keyIsDown = false;
+    });
+
+    $('.update-link').click(function (e) {
+        if (!keyIsDown) {
+            // Try to get the .qty_input element near this .update-link
+            var form = $(this).prev('.update-form');
+            var qtyInput = form.find('.qty_input');
+
+            var qtyValue = parseInt(qtyInput.val(), 10);
+
+            // Check if qtyValue is a valid number and within range
+            if (!isNaN(qtyValue) && qtyValue >= 0 && qtyValue <= 99) {
+                form.submit();
+            } else {
+                alert("Quantity must be between 0 and 99.");
+            }
+        }
+    });
+
 
     // Remove item and reload on click
     $('.remove-item').click(function(e) {
