@@ -8,7 +8,7 @@
     <div class="dropdown-menu border-0 bg-dark text-white" aria-labelledby="user-options-mobile">
         {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
-                <a href="{% url 'admin:index' %}" class="dropdown-item admin-controls">Admin Panel</a>
+                <a href="{% url 'admin:index' %}" target="_blank" rel="nofollow" class="dropdown-item admin-controls">Admin Panel</a>
                 <a href="{% url 'add_product' %}" class="dropdown-item admin-controls">Product Management</a>
             {% endif %}
             <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>

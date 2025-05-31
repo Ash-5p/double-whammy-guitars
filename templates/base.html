@@ -95,7 +95,7 @@
             <div class="dropdown-menu border-0 bg-dark text-white" aria-labelledby="user-options">
               {% if request.user.is_authenticated %}
               {% if request.user.is_superuser %}
-              <a href="{% url 'admin:index' %}" class="dropdown-item admin-controls">Admin Panel</a>
+              <a href="{% url 'admin:index' %}" target="_blank" rel="nofollow" class="dropdown-item admin-controls">Admin Panel</a>
               <a href="{% url 'add_product' %}" class="dropdown-item admin-controls">Product Management</a>
               {% endif %}
               <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
@@ -109,7 +109,7 @@
           <li class="list-inline-item">
             <a class="{% if grand_total %}bag font-weight-bold{% else %}text-white{% endif %} nav-link" href="{% url 'view_bag' %}">
               <div class="text-center">
-                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                <div><i class="fas fa-shopping-bag fa-lg bag-logo"></i></div>
                 <p class="my-0">
                   {% if grand_total %}
                   £{{ grand_total|floatformat:2 }}
@@ -190,10 +190,10 @@
   <footer class="container-fluid fixed-bottom">
     <div class="row bg-dark pt-lg-2 d-flex bg-dark">
         <div class="col-12 d-flex justify-content-center align-items-center">
+            <a href="https://www.linkedin.com/in/ashley-preece-82698a142/" target="_blank" rel="nofollow" aria-label="Visit my Linkedin page (opens in a new tab)"><i class="fa-brands fa-linkedin text-orange"></i></a>
+            <a href="https://github.com/Ash-5p" target="_blank" rel="nofollow" aria-label="Visit my Github page (opens in a new tab)"><i class="fa-brands fa-square-github text-orange"></i></a>
             <a href="https://www.facebook.com/" target="_blank" rel="nofollow" aria-label="Visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-square-facebook text-orange"></i></a>
-            <a href="https://www.instagram.com/" target="_blank" rel="nofollow" aria-label="Visit our Instagram page (opens in a new tab)"><i class="fa-brands fa-square-instagram text-orange"></i></a>
             <a href="https://www.youtube.com/" target="_blank" rel="nofollow" aria-label="Visit our Youtube page (opens in a new tab)"><i class="fa-brands fa-square-youtube text-orange"></i></a>
-            <a href="https://x.com/" target="_blank" rel="nofollow" aria-label="Visit our X page (opens in a new tab)"><i class="fa-brands fa-square-x-twitter text-orange"></i></a>
         </div>
     </div>
   </footer>
