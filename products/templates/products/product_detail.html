@@ -54,7 +54,7 @@
                 {% if request.user.is_superuser %}
                     <small class="ml-3">
                         <a class="btn-primary btn-admin" href="{% url 'edit_product' product.id %}">Edit</a>
-                        <a class="btn-danger btn-admin delete-btn" aria-label="delete" data-product_id="{{ product.id }}">Delete</a>
+                        <a class="btn-danger btn-admin delete-btn" href="#" aria-label="delete" data-product_id="{{ product.id }}">Delete</a>
                     </small>
                 {% endif %}
                 <article>
