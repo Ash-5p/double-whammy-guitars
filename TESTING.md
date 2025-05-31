@@ -166,13 +166,13 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | Bag | ![screenshot](documentation/lighthouse/mobile-bag.png) | ![screenshot](documentation/lighthouse/desktop-bag.png) | Some performance issues on mobile |
 | Checkout | ![screenshot](documentation/lighthouse/mobile-checkout.png) | ![screenshot](documentation/lighthouse/desktop-checkout.png) | Some performance issues on mobile |
 | Checkout Success | ![screenshot](documentation/lighthouse/mobile-checkout-success.png) | ![screenshot](documentation/lighthouse/desktop-checkout-success.png) | Some performance issues on mobile |
-| FAQs | ![screenshot](documentation/lighthouse/mobile-faqs.png) | ![screenshot](documentation/lighthouse/desktop-faqs.png) | |
-| Edit FAQ | ![screenshot](documentation/lighthouse/mobile-edit-faq.png) | ![screenshot](documentation/lighthouse/desktop-edit-faq.png) | |
-| Add Product | ![screenshot](documentation/lighthouse/mobile-add-product.png) | ![screenshot](documentation/lighthouse/desktop-add-product.png) | |
-| Edit Product | ![screenshot](documentation/lighthouse/mobile-edit-product.png) | ![screenshot](documentation/lighthouse/desktop-edit-product.png) | |
-| Newsletter | ![screenshot](documentation/lighthouse/mobile-newsletter.png) | ![screenshot](documentation/lighthouse/desktop-newsletter.png) | |
-| Contact | ![screenshot](documentation/lighthouse/mobile-contact.png) | ![screenshot](documentation/lighthouse/desktop-contact.png) | |
-| 404 | ![screenshot](documentation/lighthouse/mobile-404.png) | ![screenshot](documentation/lighthouse/desktop-404.png) | |
+| FAQs | ![screenshot](documentation/lighthouse/mobile-faqs.png) | ![screenshot](documentation/lighthouse/desktop-faqs.png) | Some performance issues on mobile |
+| Edit FAQ | ![screenshot](documentation/lighthouse/mobile-edit-faq.png) | ![screenshot](documentation/lighthouse/desktop-edit-faq.png) | Some performance issues on mobile |
+| Add Product | ![screenshot](documentation/lighthouse/mobile-add-product.png) | ![screenshot](documentation/lighthouse/desktop-add-product.png) | Some performance issues on mobile |
+| Edit Product | ![screenshot](documentation/lighthouse/mobile-edit-product.png) | ![screenshot](documentation/lighthouse/desktop-edit-product.png) | Some performance issues on mobile |
+| Newsletter | ![screenshot](documentation/lighthouse/mobile-newsletter.png) | ![screenshot](documentation/lighthouse/desktop-newsletter.png) | Some performance issues on mobile |
+| Contact | ![screenshot](documentation/lighthouse/mobile-contact.png) | ![screenshot](documentation/lighthouse/desktop-contact.png) | Some performance issues on mobile |
+| 404 | ![screenshot](documentation/lighthouse/mobile-404.png) | ![screenshot](documentation/lighthouse/desktop-404.png) | Some performance issues on mobile |
 
 ## Defensive Programming
 
