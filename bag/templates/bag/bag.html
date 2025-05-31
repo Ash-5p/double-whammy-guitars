@@ -72,8 +72,8 @@
                                                     </div>
                                                 </div>
                                             </form>
-                                            <a class="update-link text-info"><small>Update</small></a>
-                                            <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Remove</small></a>
+                                            <a class="update-link" href="#"><small>Update</small></a>
+                                            <a class="remove-item text-danger float-right" href="#" id="remove_{{ item.item_id }}"><small>Remove</small></a>
                                         </div>                    
                                     </td>
                                     <td class="py-3">
@@ -86,9 +86,9 @@
                         {% endfor %}
                         <tr>
                             <td colspan="3" class="pt-5 text-right">
-                                <h6><strong>Bag Total: £{{ total|floatformat:2 }}</strong></h6>
-                                <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
-                                    <h4 class="mt-4"><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h4>
+                                <p><strong>Bag Total: £{{ total|floatformat:2 }}</strong></p>
+                                <p>Delivery: £{{ delivery|floatformat:2 }}</p>
+                                    <h3 class="mt-4"><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h3>
                                     {% if free_delivery_delta > 0 %}
                                         <p class="mb-1 text-danger">
                                             You could get free delivery by spending just <strong>£{{ free_delivery_delta }}</strong> more!
