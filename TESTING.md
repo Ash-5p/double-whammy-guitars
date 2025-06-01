@@ -11,6 +11,9 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Directory | File | URL | Screenshot | Notes |
 | --- | --- | --- | --- | --- |
+| account | [signup.html](https://github.com/Ash-5p/double-whammy-guitars/blob/main/templates/allauth/account/signup.html) | [HTML W3C Validator Link](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdouble-whammy-guitars-47bed68ef1db.herokuapp.com%2Faccounts%2Fsignup%2F) | ![screenshot](documentation/validation/html-register.png) | |
+| account | [login.html](https://github.com/Ash-5p/double-whammy-guitars/blob/main/templates/allauth/account/login.html) | [HTML W3C Validator Link](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdouble-whammy-guitars-47bed68ef1db.herokuapp.com%2Faccounts%2Flogin%2F) | ![screenshot](documentation/validation/html-login.png) | |
+| account | [logout.html](https://github.com/Ash-5p/double-whammy-guitars/blob/main/templates/allauth/account/logout.html) | [HTML W3C Validator Link](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdouble-whammy-guitars-47bed68ef1db.herokuapp.com%2Faccounts%2Flogout%2F) | ![screenshot](documentation/validation/html-logout.png) | |
 | bag | [bag.html](https://github.com/Ash-5p/double-whammy-guitars/blob/main/bag/templates/bag/bag.html) | [HTML W3C Validator Link](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdouble-whammy-guitars-47bed68ef1db.herokuapp.com%2Fbag%2F) | ![screenshot](documentation/validation/html-bag.png) | W3C link provided shows validation for empty bag. Full page content checked via text input as item must be added to bag by user to render full page content. |
 | checkout | [checkout.html](https://github.com/Ash-5p/double-whammy-guitars/blob/main/checkout/templates/checkout/checkout.html) | No link provided | ![screenshot](documentation/validation/html-checkout.png) | No W3C link provided. Could not check by URI due to page requiring item to be put into bag to access. |
 | checkout | [checkout_success.html](https://github.com/Ash-5p/double-whammy-guitars/blob/main/checkout/templates/checkout/checkout_success.html) | No link provided | ![screenshot](documentation/validation/html-checkout_success.png) | No WC3 link provided, as validation by URI requires order number. |
@@ -307,9 +310,6 @@ Any remaining open issues can be tracked [here](https://www.github.com/Ash-5p/do
 
 | Issue | Screenshot |
 | --- | --- |
-| On devices smaller than 375px, the page starts to have horizontal `overflow-x` scrolling. | ![screenshot](documentation/issues/image-cropping.png) |
-| When validating HTML with a semantic `<section>` element, the validator warns about lacking a header `h2-h6`. This is acceptable. | ![screenshot](documentation/issues/section-header.png) |
-| Validation errors on "signup.html" coming from the Django Allauth package. | ![screenshot](documentation/issues/allauth.png) |
 | With a known order-number, users can brute-force "checkout_success.html" and see potentially sensitive information. | ![screenshot](documentation/issues/checkout-success.png) |
 | If a product is in your bag/cart, but then gets deleted from the database, it throws errors from the session storage memory. | ![screenshot](documentation/issues/session-storage.png) |
 
