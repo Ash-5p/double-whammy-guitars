@@ -221,7 +221,7 @@ input[name='q']::placeholder {
     border-bottom: black solid 1px;
 }
 
-.bag-logo {
+.bag .bag-logo {
     color: #FF4500;
 }
 
