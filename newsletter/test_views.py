@@ -37,6 +37,7 @@ class NewsletterViewTests(TestCase):
         response = self.client.post(reverse('newsletter'), data={'email': ''})
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'newsletter/newsletter.html')
-        self.assertFormError(response, 'form', 'email', 'This field is required.')
+        self.assertFormError(
+            response, 'form', 'email', 'This field is required.')
         self.assertEqual(Newsletter.objects.count(), 0)
         self.assertEqual(len(mail.outbox), 0)

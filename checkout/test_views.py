@@ -28,7 +28,8 @@ class CheckoutViewsTest(TestCase):
         self.assertEqual(response.status_code, 200)
         mock_modify.assert_called_once()
 
-    @patch('checkout.views.stripe.PaymentIntent.modify', side_effect=Exception('Stripe error'))
+    @patch('checkout.views.stripe.PaymentIntent.modify',
+           side_effect=Exception('Stripe error'))
     def test_cache_checkout_data_failure(self, mock_modify):
         self.client.login(username='testuser', password='testpass')
         response = self.client.post(reverse('cache_checkout_data'), {
