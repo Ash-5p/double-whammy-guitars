@@ -172,7 +172,7 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | Edit Product | ![screenshot](documentation/lighthouse/mobile-edit-product.png) | ![screenshot](documentation/lighthouse/desktop-edit-product.png) | Some performance issues on mobile |
 | Newsletter | ![screenshot](documentation/lighthouse/mobile-newsletter.png) | ![screenshot](documentation/lighthouse/desktop-newsletter.png) | Some performance issues on mobile |
 | Contact | ![screenshot](documentation/lighthouse/mobile-contact.png) | ![screenshot](documentation/lighthouse/desktop-contact.png) | Some performance issues on mobile |
-| 404 | ![screenshot](documentation/lighthouse/mobile-404.png) | ![screenshot](documentation/lighthouse/desktop-404.png) | Some performance issues on mobile |
+| 404 | ![screenshot](documentation/lighthouse/mobile-404.png) | ![screenshot](documentation/lighthouse/desktop-404.png) | Some performance issues on mobile. Minor issues with best practices & SEO due to 404 error |
 
 ## Defensive Programming
 
