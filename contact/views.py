@@ -29,7 +29,7 @@ def contact(request):
             messages.success(
                 request, 'Your message was successfully submitted!')
             send_confirmation_email(contact)
-            return redirect(reverse('contact'))
+            return redirect(reverse('home'))
         else:
             messages.error(
                 request,
