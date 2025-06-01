@@ -33,5 +33,3 @@ class UserProfileForm(forms.ModelForm):
                 self.fields[field].label = False
             else:
                 self.fields['default_country'].label = 'Country'
-            self.fields[field].widget.attrs[
-                'class'] = 'border-black rounded-0 profile-form-input'

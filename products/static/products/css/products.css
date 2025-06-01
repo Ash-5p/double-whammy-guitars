@@ -41,4 +41,7 @@ select#sort-selector {
   color: #000;
 }
 
-
+#id_image {
+  border: none;
+  padding-left: 0;
+}

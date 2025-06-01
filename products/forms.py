@@ -23,6 +23,3 @@ class ProductForm(forms.ModelForm):
             (s.id, s.get_friendly_name()) for s in subcategories]
         self.fields['brand'].choices = [
             (b.id, b.get_friendly_name()) for b in brands]
-
-        for field_name, field in self.fields.items():
-            field.widget.attrs['class'] = 'border-black rounded-0'
